@@ -41,12 +41,12 @@ export default function HeroSection() {
     <>
         <div className='bg-[#FFF7F0] w-full pb-[60px]'>
             <div className='w-11/12 m-auto'>
-                <div className='m-auto w-[62%] pt-[63px] pb-[37px]'>
-                    <div className='m-auto text-[45px] font-medium text-center leading-[49.5px]'>Let's dive into what makes Remotual so awesome</div>
+                <div className='m-auto md:w-[62%] w-full pt-[63px] pb-[37px]'>
+                    <div className='m-auto md:text-[45px] text-[34px] font-semibold text-center leading-[49.5px]'>Let's dive into what makes Remotual so awesome</div>
                 </div>
-                <div className='flex justify-between items-center gap-[20px]'>
+                <div className='flex justify-between items-center gap-[20px] flex-col md:flex-row '>
 
-                    <div className="w-[600px] h-[510px] rounded-[20px] shadow-[6px_6px_7px_0px_rgba(0,0,0,0.05)] bg-white flex justify-center items-center overflow-hidden">
+                    <div className="w-full md:w-[600px] md:h-[510px] rounded-[20px] order-2 md:order-1 shadow-[6px_6px_7px_0px_rgba(0,0,0,0.05)] bg-white flex justify-center items-center overflow-hidden">
                         {
                             {
                                 'tab1': <><Image src={valueGif} height={1000} width={1000} alt='gif'></Image></>,
@@ -63,7 +63,7 @@ export default function HeroSection() {
 
 
 
-                    <div className='bg-[white] p-[16px] rounded-full flex flex-col justify-center items-center  shadow-[5.13px_5.13px_5.985px_0px_rgba(0,0,0,0.05)]'>
+                    <div className='bg-[white] p-[16px] md:rounded-full grid grid-cols-4 md:grid-cols-1 place-items-center rounded-[18px] w-full md:w-[fit-content] order-1 md:order-2 justify-center items-center  shadow-[5.13px_5.13px_5.985px_0px_rgba(0,0,0,0.05)]'>
                         <div onClick={() => handleTabValue('tab1')} className={tabValue === 'tab1' ? 'bg-[#FFF5EC] transition ease-linear duration-1000 rounded-full w-[fit-content] cursor-pointer flex justify-center items-center p-3 mb-[14px]' : 'hover:bg-[#FFF5EC] rounded-full w-[fit-content] cursor-pointer flex justify-center items-center p-3 mb-[14px]'}>
                             {
                                 tabValue === 'tab1' ? <div className='w-[25px] h-[25px]'><Image src={valueFocus} height={100} width={100}></Image></div> : <div className='w-[25px] h-[25px]'><Image src={value} height={100} width={100}></Image></div>
@@ -113,13 +113,13 @@ export default function HeroSection() {
 
 
 
-                    <div className="w-[600px] shadow-[6px_6px_7px_0px_rgba(0,0,0,0.05)] h-[fit-content] transition-all duration-1000 ease-linear rounded-[20px] overflow-hidden bg-white p-[20px]">
+                    <div className="w-full md:w-[600px] shadow-[6px_6px_7px_0px_rgba(0,0,0,0.05)] order-3 md:order-3 md:max-h-[510px] h-[fit-content] transition-all duration-1000 ease-linear rounded-[20px] md:overflow-scroll bg-white p-[20px]">
                             {
                                 {
                                     'tab1': <>
                                                 <div className='bg-[#FFF8F2] rounded-[10px] py-[10px] px-[20px]'>
                                                     <div className='text-[13px] font-[500] text-[#FF7A00] uppercase'>Value Proposition</div>
-                                                    <div className='text-[34px] font-medium leading-[40px]'>Dedicated Task Force with a Dedicated EA</div>
+                                                    <div className='text-[29px] md:text-[34px] font-medium leading-[40px]'>Dedicated Task Force with a Dedicated EA</div>
                                                 </div>
 
                                                 <div className="mt-[20px]">

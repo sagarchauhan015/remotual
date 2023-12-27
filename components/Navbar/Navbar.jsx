@@ -29,7 +29,7 @@ export default function Navbar() {
   }
   return (
     <>
-      <div className="flex  md:w-11/12  mx-auto px-6 md:px-8 py-4 justify-between">
+      <div className="flex  w-11/12  mx-auto   py-4 justify-between">
         <div className="flex items-center cursor-pointer w-[100px] xl:w-[175px] lg:w-[150px]  md:w-[125px]">
           <Image src={logo} />
         </div>
