@@ -1,5 +1,6 @@
 "use client"
 import Image from "next/image"
+import Link from "next/link"
 import logo from "@/public/images/Remotual-New-Logo.svg"
 import arrowBlack from "@/public/images/arrowBlack.svg"
 import arrowOrange from "@/public/images/arrowOrange.svg"
@@ -31,7 +32,7 @@ export default function Navbar() {
     <>
       <div className="flex  w-11/12  mx-auto   py-4 justify-between">
         <div className="flex items-center cursor-pointer w-[100px] xl:w-[175px] lg:w-[150px]  md:w-[125px]">
-          <Image src={logo} />
+          <Link href={'/'}><Image src={logo} /></Link>
         </div>
 
         <div className="lg:gap-6 xl:gap-10 items-center lg:text-sm xl:text-base md:text-xs hidden lg:flex">
