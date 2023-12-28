@@ -6,7 +6,7 @@ export default function page() {
   return (
     <>
         <Navbar/>
-        <div>
+        <div className='bg-[#FFF5EC]'>
             <Contact />
         </div>
     </>
