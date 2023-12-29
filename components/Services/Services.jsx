@@ -21,7 +21,7 @@ export default function Services() {
                     <Image src={serviceThumb} height={50} width={50}></Image>
                     <div className='ml-5'>
                         <p className='text-[16px] font-semibold mb-2'>Customer Service Management</p>
-                        <p className='text-[12px] font-normal leading-4 text-justify mb-5'>At Remotual, I lead my customer service skill with a blend of strategy and a customer-first mindset. From fostering a responsive team culture to implementing innovative solutions, it's all about exceeding expectations.</p>
+                        <p className='text-[12.5px] font-normal leading-4 text-justify mb-5'>At Remotual, I lead my customer service skill with a blend of strategy and a customer-first mindset. From fostering a responsive team culture to implementing innovative solutions, it's all about exceeding expectations.</p>
                         <div className='h-[1px] bg-[linear-gradient(90deg,_rgba(255,255,255,1)_0%,_rgba(136,136,136,0.3)_50%,_rgba(255,255,255,1)_100%)]'></div>
                     </div>
                 </div>
@@ -29,7 +29,7 @@ export default function Services() {
                     <Image src={serviceProfile} height={50} width={50}></Image>
                     <div className='ml-5'>
                         <p className='text-[16px] font-semibold mb-2'>CEO Support</p>
-                        <p className='text-[12px] font-normal leading-4 text-justify mb-5'>At Remotual, I lead my customer service skill with a blend of strategy and a customer-first mindset. From fostering a responsive team culture to implementing innovative solutions, it's all about exceeding expectations.</p>
+                        <p className='text-[12.5px] font-normal leading-4 text-justify mb-5'>As the go-to support for our CEO Clients, I'm the behind-the-scenes magic maker. From scheduling to strategic execution, I ensure our leadership soars. Ready to elevate together? Let's make things happen.</p>
                         <div className='h-[1px] bg-[linear-gradient(90deg,_rgba(255,255,255,1)_0%,_rgba(136,136,136,0.3)_50%,_rgba(255,255,255,1)_100%)]'></div>
                     </div>
                 </div>
@@ -37,7 +37,7 @@ export default function Services() {
                     <Image src={serviceChart} height={50} width={50}></Image>
                     <div className='ml-5'>
                         <p className='text-[16px] font-semibold mb-2'>Lead Generation</p>
-                        <p className='text-[12px] font-normal leading-4 text-justify mb-5'>At Remotual, I lead my customer service skill with a blend of strategy and a customer-first mindset. From fostering a responsive team culture to implementing innovative solutions, it's all about exceeding expectations.</p>
+                        <p className='text-[12.5px] font-normal leading-4 text-justify mb-5'>I'm the lead generation maestro. With a blend of data savvy and creative flair, I turn prospects into lasting connections. Ready to elevate your business? Let's connect and make waves together!</p>
                         <div className='h-[1px] bg-[linear-gradient(90deg,_rgba(255,255,255,1)_0%,_rgba(136,136,136,0.3)_50%,_rgba(255,255,255,1)_100%)]'></div>
                     </div>
                 </div>
@@ -45,7 +45,7 @@ export default function Services() {
                     <Image src={servicePhone} height={50} width={50}></Image>
                     <div className='ml-5'>
                         <p className='text-[16px] font-semibold mb-2'>Inbound/Outbound calls</p>
-                        <p className='text-[12px] font-normal leading-4 text-justify mb-5'>At Remotual, I lead my customer service skill with a blend of strategy and a customer-first mindset. From fostering a responsive team culture to implementing innovative solutions, it's all about exceeding expectations.</p>
+                        <p className='text-[12.5px] font-normal leading-4 text-justify mb-5'>At Remotual, I lead my customer service skill with a blend of strategy and a customer-first mindset. From fostering a responsive team culture to implementing innovative solutions, it's all about exceeding expectations.</p>
                         <div className='h-[1px] bg-[linear-gradient(90deg,_rgba(255,255,255,1)_0%,_rgba(136,136,136,0.3)_50%,_rgba(255,255,255,1)_100%)]'></div>
                     </div>
                 </div>
