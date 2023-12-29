@@ -14,14 +14,14 @@ export default function Footer() {
               <div>
                 <Image src={logo} />
               </div>
-              <p className=" text-sm text-[#FFF] mt-[20px]">
+              <div className=" text-sm text-[#FFF] mt-[20px]">
                 <p>Do what you do best. Let us handle the rest! </p>
                 <p>
                   Connecting busy entrepreneurs with the top knowledge workers from
                   around the world.
                 </p>
                 <p>Zero Chaos | More Headspace | Focused YOU | Better Business</p>
-              </p>
+              </div>
             </div>
     
             <div className="pt-[50px] grid grid-cols-2 lg:grid-cols-3 lg:w-[50%] lg:justify-items-end gap-10 text-white text-sm">
