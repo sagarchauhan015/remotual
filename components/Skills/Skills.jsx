@@ -26,7 +26,7 @@ import headCircle from '@/public/images/heading_circle.svg'
 
 export default function Skills() {
   return (
-    <div className="bg-white mt-[40px] p-[20px] rounded-lg overflow-hidden shadow-[3.24px_3.24px_8.09px_0px_rgba(0,0,0,0.10)]">
+    <div className="lg:mt-0 lg:shadow-none lg:pl-[30px] lg:pr-[60px] bg-white mt-[40px] p-[20px] rounded-lg overflow-hidden shadow-[3.24px_3.24px_8.09px_0px_rgba(0,0,0,0.10)]">
       <div className="relative mb-3">
           <div  className='relative right-[10px] bottom-[1px] z-0'><Image src={headCircle}></Image></div>
           <p className='text-[20px] absolute top-0 z-10 font-semibold'><span className='text-[#FF7A00] '>My </span>Skills</p>
@@ -34,7 +34,7 @@ export default function Skills() {
 
       <div className='h-[2px] bg-[linear-gradient(90deg,_rgba(255,255,255,1)_0%,_rgba(136,136,136,0.3)_50%,_rgba(255,255,255,1)_100%)]'></div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-7 mt-7 mb-4">
+      <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-10 gap-7 mt-7 mb-4">
         <div >
           <div className="flex gap-3 items-center">
             <Image src={design}></Image>
@@ -87,7 +87,7 @@ export default function Skills() {
             <div className='h-[1px] bg-[linear-gradient(90deg,_rgba(255,255,255,1)_0%,_rgba(136,136,136,0.3)_50%,_rgba(255,255,255,1)_100%)]'></div>
           </div>
 
-          <div className="flex flex-col gap-6">
+          <div className="lg:mt-8 flex flex-col gap-6">
             <div className="flex items-center gap-6">
               <Image src={clickup}></Image>
               <div className="w-full flex justify-between">

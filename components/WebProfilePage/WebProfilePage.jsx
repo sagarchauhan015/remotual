@@ -9,6 +9,7 @@ import Skills from '../Skills/Skills'
 import Recommendation from '../Recommendation/Recommendation'
 import Testimonial from '../Testimonial/Testimonial'
 import AboutVideo from '../AboutVideo/AboutVideo'
+import Record from '../Record/Record'
 
 export default function WebProfilePage() {
   const [tabName, setTabName] = useState('profile')
@@ -38,6 +39,7 @@ export default function WebProfilePage() {
                             <div className='w-full h-[95%] overflow-scroll bg-white z-0 rounded-[0_8px_8px_0] '>
                                 <AboutMe />
                                 <Services />
+                                <Record />
                             </div>
                         </>,
                         'resume': 

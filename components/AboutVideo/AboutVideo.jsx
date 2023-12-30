@@ -25,7 +25,7 @@ export default function AboutVideo() {
     setMute(!mute)
   }
   return (
-    <div className="bg-white mt-[40px] p-[20px] rounded-lg overflow-hidden shadow-[3.24px_3.24px_8.09px_0px_rgba(0,0,0,0.10)]">
+    <div className="lg:mt-0 lg:pl-[30px] lg:pr-[60px] lg:shadow-none bg-white mt-[40px] p-[20px] rounded-lg overflow-hidden shadow-[3.24px_3.24px_8.09px_0px_rgba(0,0,0,0.10)]">
       <div className="relative mb-3">
           <div  className='relative right-[10px] bottom-[1px] z-0'><Image src={headCircle}></Image></div>
           <p className='text-[20px] absolute top-0 z-10 font-semibold'><span className='text-[#FF7A00] '>Who</span> is Mikka Mae U.?</p>
@@ -42,7 +42,7 @@ export default function AboutVideo() {
         play, and let's kick off this journey together!
       </p>
       {domLoaded && (
-        <div className="mt-[20px] relative border-[3px] rounded-[20px] p-2 border-[#FF7A00]">
+        <div className="lg:px-[80px] mt-[20px] relative border-[3px] rounded-[20px] p-2 border-[#FF7A00]">
           <ReactPlayer
             url="https://ik.imagekit.io/jkmgqwabx/mika_mae.mp4?updatedAt=1703856905812"
             width="100%"
