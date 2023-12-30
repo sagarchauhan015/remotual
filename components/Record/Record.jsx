@@ -19,9 +19,9 @@ export default function Record() {
             </div>
             <div className='h-[2px] bg-[linear-gradient(90deg,_rgba(255,255,255,1)_0%,_rgba(136,136,136,0.3)_50%,_rgba(255,255,255,1)_100%)]'></div>
             <div className='grid grid-cols-2 justify-center place-items-center mt-4 relative'>
-                <div className='top-[50%] -translate-[50%] z-10 w-full h-full absolute '>
-                    <div className='h-[1px] bg-[linear-gradient(90deg,_rgba(255,255,255,1)_0%,_rgba(136,136,136,0.3)_50%,_rgba(255,255,255,1)_100%)]'></div>
-                    <div className=' rotate-90 h-[1px] bg-[linear-gradient(90deg,_rgba(255,255,255,1)_0%,_rgba(136,136,136,0.3)_50%,_rgba(255,255,255,1)_100%)]'></div>
+                <div className='top-[50%] -translate-[50%] z-10 w-full h-full absolute'>
+                    <div className='h-[1px] w-[90%] md:w-[40%] m-auto bg-[linear-gradient(90deg,_rgba(255,255,255,1)_0%,_rgba(136,136,136,0.3)_50%,_rgba(255,255,255,1)_100%)]'></div>
+                    <div className=' rotate-90 h-[1px] w-[90%] md:w-[40%] m-auto bg-[linear-gradient(90deg,_rgba(255,255,255,1)_0%,_rgba(136,136,136,0.3)_50%,_rgba(255,255,255,1)_100%)]'></div>
                 </div>
                 <div className='w-full p-4 grid place-items-center z-0'>
                     <Image src={serviceProfile} height={50} width={50}></Image>
@@ -29,12 +29,12 @@ export default function Record() {
                     <p className='font-semibold text-[13px]'>Clients</p>
                 </div>
                 <div className='w-full p-4 grid place-items-center z-0'>
-                    <Image src={recordBag} height={50} width={50}></Image>
+                    <Image src={recordTask} height={50} width={50}></Image>
                     <p className='font-semibold text-[30px] my-2'>400+</p>
                     <p className='font-semibold text-[13px]'>Projects</p>
                 </div>
                 <div className='w-full p-4 grid place-items-center z-0'>
-                    <Image src={recordTask} height={50} width={50}></Image>
+                    <Image src={recordBag} height={50} width={50}></Image>
                     <p className='font-semibold text-[30px] my-2'>5+</p>
                     <p className='font-semibold text-[13px]'>Year of Experience</p>
                 </div>
