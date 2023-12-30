@@ -15,7 +15,7 @@ import viewProfile from '@/public/images/view_profile.svg'
 export default function TeamSection() {
   return (
     <>
-        <div className='bg-black'>
+        <div className='bg-[#222222]'>
             <div className='w-full'><Image src={teamUpper} height={2000} width={2000} ></Image></div>
             <div className='h-[fit-content] w-11/12 m-auto md:hidden'>
                 <div className='text-center mt-[50px]'>

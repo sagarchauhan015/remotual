@@ -63,12 +63,14 @@ export default function HeroSection() {
 
 
 
-                    <div className='bg-[white] p-[16px] md:rounded-full grid grid-cols-4 md:grid-cols-1 place-items-center rounded-[18px] w-full md:w-[fit-content] order-1 md:order-2 justify-center items-center  shadow-[5.13px_5.13px_5.985px_0px_rgba(0,0,0,0.05)]'>
-                        <div onClick={() => handleTabValue('tab1')} className={tabValue === 'tab1' ? 'bg-[#FFF5EC] transition ease-linear duration-1000 rounded-full w-[fit-content] cursor-pointer flex justify-center items-center p-3 mb-[14px]' : 'hover:bg-[#FFF5EC] rounded-full w-[fit-content] cursor-pointer flex justify-center items-center p-3 mb-[14px]'}>
-                            {
-                                tabValue === 'tab1' ? <div className='w-[25px] h-[25px]'><Image src={valueFocus} height={100} width={100}></Image></div> : <div className='w-[25px] h-[25px]'><Image src={value} height={100} width={100}></Image></div>
-                            }
+                    <div className='bg-[white] fixed md:static p-[16px] md:rounded-full grid grid-cols-8 md:grid-cols-1 place-items-center rounded-[18px] w-full md:w-[fit-content] order-1 md:order-2 justify-center items-center  shadow-[5.13px_5.13px_5.985px_0px_rgba(0,0,0,0.05)]'>
+                        <div className=''>
+                            <div onClick={() => handleTabValue('tab1')} className={tabValue === 'tab1' ? 'bg-[#FFF5EC] transition ease-linear duration-1000 rounded-full w-[fit-content] cursor-pointer flex justify-center items-center p-3 mb-[14px]' : 'hover:bg-[#FFF5EC] rounded-full w-[fit-content] cursor-pointer flex justify-center items-center p-3 mb-[14px]'}>
+                                {
+                                    tabValue === 'tab1' ? <div className='w-[25px] h-[25px]'><Image src={valueFocus} height={100} width={100}></Image></div> : <div className='w-[25px] h-[25px]'><Image src={value} height={100} width={100}></Image></div>
+                                }
                             
+                            </div>
                         </div>
                         <div onClick={() => handleTabValue('tab2')} className={tabValue === 'tab2' ? 'bg-[#FFF5EC] transition ease-linear duration-1000 rounded-full w-[fit-content] cursor-pointer flex justify-center items-center p-3 mb-[14px]' : 'hover:bg-[#FFF5EC] rounded-full w-[fit-content] cursor-pointer flex justify-center items-center p-3 mb-[14px]'}>
                             {

@@ -8,8 +8,8 @@ import instagram from "@/public/images/instagram.svg"
 
 export default function Footer() {
   return (
-        <>
-          <div className="lg:flex lg:justify-between bg-[Black] px-[30px] pt-[50px] pb-10">
+        <div className="bg-[#222222]">
+          <div className="lg:flex lg:justify-between bg-[#222222] w-11/12 mx-auto pt-[50px] pb-10">
             <div className="lg:w-[50%]">
               <div>
                 <Image src={logo} />
@@ -66,11 +66,11 @@ export default function Footer() {
             </p>
           </div>
           
-          <div className="bg-black px-[30px] hidden lg:block">
+          <div className="bg-[#222222]  w-11/12 mx-auto hidden lg:block">
             <hr className=" text-white " />
           </div>
     
-          <div className="bg-black p-[30px] hidden lg:flex justify-between ">
+          <div className="bg-[#222222]  w-11/12 mx-auto  hidden lg:flex justify-between ">
             <p className=" text-[#FF7A00] hidden lg:flex items-center text-sm my-10">
               © 2023 Remotual. All Rights Reserved
             </p>
@@ -81,6 +81,6 @@ export default function Footer() {
               <Image className="cursor-pointer" src={instagram}></Image>
             </div>
           </div>
-        </>
+        </div>
   )
 }
