@@ -11,7 +11,7 @@ import Testimonial from '../Testimonial/Testimonial'
 import AboutVideo from '../AboutVideo/AboutVideo'
 import Record from '../Record/Record'
 
-export default function WebProfilePage() {
+export default function WebProfilePage(props) {
   const [tabName, setTabName] = useState('profile')
 
   function handleTabName(tabvalue){
@@ -37,7 +37,9 @@ export default function WebProfilePage() {
                         'profile': 
                         <>
                             <div className='w-full h-[95%] overflow-scroll bg-white z-0 rounded-[0_8px_8px_0] '>
-                                <AboutMe />
+                                <AboutMe 
+                                    user={props.user}
+                                />
                                 <Services />
                                 <Record />
                             </div>

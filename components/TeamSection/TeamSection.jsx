@@ -87,7 +87,7 @@ export default function TeamSection() {
                     <div className='text-white text-[26px]'>Meet our Top-class EA's</div>
                 </div>
                 <div className="absolute w-full h-full">
-                    <Link href="/profile/id1">
+                    <Link href="/profile/mika">
                         <div className='group h-[170px] w-[170px] rounded-full absolute left-28 top-10 bg-[url("../public/images/team_profile1.svg")] bg-no-repeat bg-cover'>
                             <div className='flex justify-center items-center w-full h-full rounded-full transition-all duration-500 ease-linear cursor-pointer hover:bg-[rgba(255,123,0,0.7)]'>
                                 <div className='hidden transition-all duration-500 group-hover:flex justify-center flex-col items-center'>
@@ -97,7 +97,7 @@ export default function TeamSection() {
                             </div>
                         </div>
                     </Link>
-                    <Link href="">
+                    <Link href="/profile/carlota">
                         <div className='group h-[150px] w-[150px] rounded-full absolute bottom-40 bg-[url("../public/images/team_profile2.svg")] bg-no-repeat bg-cover'>
                             <div className='flex justify-center items-center w-full h-full rounded-full transition-all duration-500 ease-linear cursor-pointer hover:bg-[rgba(255,123,0,0.7)]'>
                                 <div className='hidden transition-all duration-500 group-hover:flex justify-center flex-col items-center'>

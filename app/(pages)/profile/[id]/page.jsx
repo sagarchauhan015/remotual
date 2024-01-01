@@ -36,7 +36,9 @@ export default function page(props) {
             </div>
         </div>
         <div className='bg-[#FFF5EC] lg:flex hidden h-[calc(100vh-96px)] justify-center items-center'>
-          <WebProfilePage />
+          <WebProfilePage 
+            user = {dataJson[props.params.id]}
+          />
         </div>
        
     </>
