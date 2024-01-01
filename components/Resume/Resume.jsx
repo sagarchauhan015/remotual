@@ -16,7 +16,7 @@ export default function Resume() {
         </div>
         <div className='h-[2px] bg-[linear-gradient(90deg,_rgba(255,255,255,1)_0%,_rgba(136,136,136,0.3)_50%,_rgba(255,255,255,1)_100%)]'></div>
 
-      <div className="flex gap-10">
+      <div className="md:flex md:gap-10">
         <div>
           <div className="flex gap-3 items-center mt-6">
             <Image src={experience}></Image>
