@@ -26,7 +26,8 @@ import globeFocus from '@/public/images/globe2_focus.svg'
 import dollar from '@/public/images/dollar.svg'
 import dollarFocus from '@/public/images/dollar_focus.svg'
 
-
+import dataJson from '@/utils/dataJson';
+import Features from '../Features/Features'
 
 
 
@@ -131,221 +132,59 @@ export default function HeroSection() {
                             {
                                 {
                                     'tab1': <>
-                                                <div className='bg-[#FFF8F2] rounded-[10px] py-[10px] px-[20px]'>
-                                                    <div className='text-[13px] font-[500] text-[#FF7A00] uppercase'>Value Proposition</div>
-                                                    <div className='text-[29px] md:text-[34px] font-medium leading-[40px]'>Dedicated Task Force with a Dedicated EA</div>
-                                                </div>
-
-                                                <div className="mt-[20px]">
-                                                    <div className="flex justify-center items-center">
-                                                        <div className="bg-[#FFF5EC] p-4 rounded-full">
-                                                            <div className='w-[25px] h-[25px] text-orange-600'><Image src={value} height={100} width={100}></Image></div>
-                                                        </div>
-                                                        <div className="font-[300] ml-2 text-[14px]">
-                                                            <p>Why settle for a single VA or the hassle of managing multiple individual VAs when you can have your own Oceans-11 Style Team, led by a dedicated EA who can be your single point of contact?</p>
-                                                        </div>
-                                                    </div>
-                                                    <div className="border-[0.5px] border-solid my-4 border-[#BDBDBD]"></div>
-                                                    <div className="flex justify-center items-center">
-                                                        <div className="bg-[#FFF5EC] p-4 rounded-full">
-                                                            <div className='w-[25px] h-[25px] text-orange-600'><Image src={value} height={100} width={100}></Image></div>
-                                                        </div>
-                                                        <div className="font-[300] ml-2 text-[14px]">
-                                                            <p>Each team member has gone through rigorous vetting, background checks, and comprehensive training before joining your project. Excellence isn't just a goal; it's our standard.</p>
-                                                        </div>
-                                                    </div>
-                                                    <div className="border-[0.5px] border-solid my-4 border-[#BDBDBD]"></div>
-                                                    <div className="flex justify-center items-center">
-                                                        <div className="bg-[#FFF5EC] p-4 rounded-full">
-                                                            <div className='w-[25px] h-[25px] text-orange-600'><Image src={value} height={100} width={100}></Image></div>
-                                                        </div>
-                                                        <div className="font-[300] ml-2 text-[14px]">
-                                                            <p>Our EAs are elite, tech-savvy, and versatile. They seamlessly step into roles like Project Managers, Coordinators, and Operations Managers. When you choose us, you're choosing nothing less than excellence.</p>
-                                                        </div>
-                                                    </div>
-
-                                                </div>
-
-                                                <div className="w-[fit-content] bg-[#FF7A00] px-5 py-3 text-white rounded-full mt-4 cursor-pointer">Get Started</div>
+                                                <Features
+                                                    data = {dataJson.salesPage.features.tab1.content}
+                                                    image = {value}
+                                                />
                                             </>,
 
                                         'tab2' : <>
-                                                    <div className='bg-[#FFF8F2] rounded-[10px] py-[10px] px-[20px]'>
-                                                        <div className='text-[13px] font-[500] text-[#FF7A00] uppercase'>Value Proposition</div>
-                                                        <div className='text-[34px] font-medium leading-[40px]'>Unlock Limitless Growth with Us!</div>
-                                                    </div>
-
-                                                    <div className="mt-[20px]">
-                                                        <div className="flex justify-center items-center">
-                                                            <div className="bg-[#FFF5EC] p-4 rounded-full">
-                                                                <div className='w-[25px] h-[25px] text-orange-600'><Image src={lock} height={100} width={100}></Image></div>
-                                                            </div>
-                                                            <div className="font-[300] ml-2 text-[14px]">
-                                                                <p>Meet our scalable wizards! No matter your needs, we've got you covered - and the best part? We're all right under one roof!</p>
-                                                            </div>
-                                                        </div>
-                                                        <div className="border-[0.5px] border-solid my-4 border-[#BDBDBD]"></div>
-                                                        <div className="flex justify-center items-center">
-                                                            <div className="bg-[#FFF5EC] p-4 rounded-full">
-                                                                <div className='w-[25px] h-[25px] text-orange-600'><Image src={lock} height={100} width={100}></Image></div>
-                                                            </div>
-                                                            <div className="font-[300] ml-2 text-[14px]">
-                                                                <p>Request services like lead generation, research, bookkeeping, SEO, graphic design, cold calling, marketing, sales, web development, and more as your needs evolve - we've got your back!</p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-
-                                                    <div className="w-[fit-content] bg-[#FF7A00] px-5 py-3 text-white rounded-full mt-4 cursor-pointer">Get Started</div>
+                                                    <Features
+                                                        data = {dataJson.salesPage.features.tab2.content}
+                                                        image = {lock}
+                                                    />
                                                 </>,
                                         'tab3': <>
-                                        <div className='bg-[#FFF8F2] rounded-[10px] py-[10px] px-[20px]'>
-                                            <div className='text-[13px] font-[500] text-[#FF7A00] uppercase'>Value Proposition</div>
-                                            <div className='text-[34px] font-medium leading-[40px]'>Efficiency Crusaders</div>
-                                        </div>
+                                                    <Features
+                                                        data={dataJson.salesPage.features.tab3.content}
+                                                        image={time}
+                                                    />
+                                                </>,
 
-                                        <div className="mt-[20px]">
-                                            <div className="flex justify-center items-center">
-                                                <div className="bg-[#FFF5EC] p-4 rounded-full">
-                                                    <div className='w-[25px] h-[25px] text-orange-600'><Image src={time} height={100} width={100}></Image></div>
-                                                </div>
-                                                <div className="font-[300] ml-2 text-[14px]">
-                                                    <p>We're fueled by efficiency, not hours billed. We're on a mission to streamline, cut costs, and supercharge your productivity.</p>
-                                                </div>
-                                            </div>
+                                        'tab4': <>
+                                                    <Features
+                                                        data={dataJson.salesPage.features.tab4.content}
+                                                        image={protection}
+                                                    />
+                                                </>,
 
-                                        </div>
+                                        'tab5': <>
+                                                    <Features
+                                                        data={dataJson.salesPage.features.tab5.content}
+                                                        image={plug}
+                                                    />
+                                                </>,
 
-                                        <div className="w-[fit-content] bg-[#FF7A00] px-5 py-3 text-white rounded-full mt-4 cursor-pointer">Get Started</div>
-                                    </>,
+                                        'tab6': <>
+                                                    <Features
+                                                        data={dataJson.salesPage.features.tab6.content}
+                                                        image={browser}
+                                                    />
+                                                </>,
 
-                                'tab4': <>
-                                <div className='bg-[#FFF8F2] rounded-[10px] py-[10px] px-[20px]'>
-                                    <div className='text-[13px] font-[500] text-[#FF7A00] uppercase'>Value Proposition</div>
-                                    <div className='text-[34px] font-medium leading-[40px]'>EA Churn Protection</div>
-                                </div>
+                                'tab7': <>
+                                            <Features
+                                                data={dataJson.salesPage.features.tab7.content}
+                                                image={dollar}
+                                            />
+                                        </>,
 
-                                <div className="mt-[20px]">
-                                    <div className="flex justify-center items-center">
-                                        <div className="bg-[#FFF5EC] p-4 rounded-full">
-                                            <div className='w-[25px] h-[25px] text-orange-600'><Image src={protection} height={100} width={100}></Image></div>
-                                        </div>
-                                        <div className="font-[300] ml-2 text-[14px]">
-                                            <p>Say goodbye to job posts, screening, interviews, and endless onboarding. No more worries about disappearing assistants.</p>
-                                        </div>
-                                    </div>
-                                    <div className="border-[0.5px] border-solid my-4 border-[#BDBDBD]"></div>
-                                    <div className="flex justify-center items-center">
-                                        <div className="bg-[#FFF5EC] p-4 rounded-full">
-                                            <div className='w-[25px] h-[25px] text-orange-600'><Image src={protection} height={100} width={100}></Image></div>
-                                        </div>
-                                        <div className="font-[300] ml-2 text-[14px]">
-                                            <p>With Remotual, scale up and down effortlessly 🌟, never fret about the chaos of VA turnover. We guarantee backup and rock-solid Standard Operating Procedures for unwavering stability.</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div className="w-[fit-content] bg-[#FF7A00] px-5 py-3 text-white rounded-full mt-4 cursor-pointer">Get Started</div>
-                            </>,
-
-                            'tab5': <>
-                            <div className='bg-[#FFF8F2] rounded-[10px] py-[10px] px-[20px]'>
-                                <div className='text-[13px] font-[500] text-[#FF7A00] uppercase'>Value Proposition</div>
-                                <div className='text-[34px] font-medium leading-[40px]'>Plug-And-Play</div>
-                            </div>
-
-                            <div className="mt-[20px]">
-                                <div className="flex justify-center items-center">
-                                    <div className="bg-[#FFF5EC] p-4 rounded-full">
-                                        <div className='w-[25px] h-[25px] text-orange-600'><Image src={plug} height={100} width={100}></Image></div>
-                                    </div>
-                                    <div className="font-[300] ml-2 text-[14px]">
-                                        <p>Our tech-savvy EAs effortlessly fuse into your tech stack, supercharging your digital prowess. Our plug-and-play onboarding means we hit the ground running for your business - no sweat, no stress.</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="w-[fit-content] bg-[#FF7A00] px-5 py-3 text-white rounded-full mt-4 cursor-pointer">Get Started</div>
-                            </>,
-
-                        'tab6': <>
-                        <div className='bg-[#FFF8F2] rounded-[10px] py-[10px] px-[20px]'>
-                            <div className='text-[13px] font-[500] text-[#FF7A00] uppercase'>Value Proposition</div>
-                            <div className='text-[34px] font-medium leading-[40px]'>Live Command Center</div>
-                        </div>
-
-                        <div className="mt-[20px]">
-                            <div className="flex justify-center items-center">
-                                <div className="bg-[#FFF5EC] p-4 rounded-full">
-                                    <div className='w-[25px] h-[25px] text-orange-600'><Image src={browser} height={100} width={100}></Image></div>
-                                </div>
-                                <div className="font-[300] ml-2 text-[14px]">
-                                    <p>Gain unparalleled visibility with our real-time dashboards. Track tasks, time, trends, and take total control of your operations.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="w-[fit-content] bg-[#FF7A00] px-5 py-3 text-white rounded-full mt-4 cursor-pointer">Get Started</div>
-                        </>,
-
-                        'tab7': <>
-                            <div className='bg-[#FFF8F2] rounded-[10px] py-[10px] px-[20px]'>
-                                <div className='text-[13px] font-[500] text-[#FF7A00] uppercase'>Value Proposition</div>
-                                <div className='text-[34px] font-medium leading-[40px]'>Plug-And-Play</div>
-                            </div>
-
-                            <div className="mt-[20px]">
-                                <div className="flex justify-center items-center">
-                                    <div className="bg-[#FFF5EC] p-4 rounded-full">
-                                        <div className='w-[25px] h-[25px] text-orange-600'><Image src={dollar} height={100} width={100}></Image></div>
-                                    </div>
-                                    <div className="font-[300] ml-2 text-[14px]">
-                                        <p>Our tech-savvy EAs effortlessly fuse into your tech stack, supercharging your digital prowess. Our plug-and-play onboarding means we hit the ground running for your business - no sweat, no stress.</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="w-[fit-content] bg-[#FF7A00] px-5 py-3 text-white rounded-full mt-4 cursor-pointer">Get Started</div>
-                            </>,
-
-                            'tab8': <>
-                            <div className='bg-[#FFF8F2] rounded-[10px] py-[10px] px-[20px]'>
-                                <div className='text-[13px] font-[500] text-[#FF7A00] uppercase'>Value Proposition</div>
-                                <div className='text-[34px] font-medium leading-[40px]'>The Backbone for Global Commerce</div>
-                            </div>
-
-                            <div className="mt-[20px]">
-                                <div className="flex justify-center items-center">
-                                    <div className="bg-[#FFF5EC] p-4 rounded-full">
-                                        <div className='w-[25px] h-[25px] text-orange-600'><Image src={globe} height={100} width={100}></Image></div>
-                                    </div>
-                                    <div className="font-[300] ml-2 text-[14px]">
-                                        <p>We fosters seamless teamwork across borders through advanced communication tools.</p>
-                                    </div>
-                                </div>
-                                <div className="border-[0.5px] border-solid my-4 border-[#BDBDBD]"></div>
-                                <div className="flex justify-center items-center">
-                                    <div className="bg-[#FFF5EC] p-4 rounded-full">
-                                        <div className='w-[25px] h-[25px] text-orange-600'><Image src={globe} height={100} width={100}></Image></div>
-                                    </div>
-                                    <div className="font-[300] ml-2 text-[14px]">
-                                        <p>Serving as a centralized hub, We simplifies global business processes and enhances transaction efficiency.</p>
-                                    </div>
-                                </div>
-                                <div className="border-[0.5px] border-solid my-4 border-[#BDBDBD]"></div>
-                                <div className="flex justify-center items-center">
-                                    <div className="bg-[#FFF5EC] p-4 rounded-full">
-                                        <div className='w-[25px] h-[25px] text-orange-600'><Image src={globe} height={100} width={100}></Image></div>
-                                    </div>
-                                    <div className="font-[300] ml-2 text-[14px]">
-                                        <p>We democratizes talent acquisition, providing businesses with a competitive edge by accessing and retaining a diverse global workforce.</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="w-[fit-content] bg-[#FF7A00] px-5 py-3 text-white rounded-full mt-4 cursor-pointer">Get Started</div>
-                            </>,
-
-
+                                'tab8': <>
+                                            <Features
+                                                data={dataJson.salesPage.features.tab8.content}
+                                                image={globe}
+                                            />
+                                        </>,
                                 }[tabValue]
                             }
                     </div>

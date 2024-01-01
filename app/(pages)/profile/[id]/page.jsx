@@ -11,15 +11,18 @@ import Services from '@/components/Services/Services'
 import Skills from '@/components/Skills/Skills'
 import Testimonial from '@/components/Testimonial/Testimonial'
 import WebProfilePage from '@/components/WebProfilePage/WebProfilePage'
+import dataJson from '@/utils/dataJson'
 
-export default function page() {
+export default function page(props) {
   return (
     <>
         <Navbar/>
         <div className='bg-[#FFF5EC] pb-[40px] lg:hidden' >
             <div>
               <Contact />
-              <AboutMe />
+              <AboutMe 
+                user = {dataJson[props.params.id]}
+              />
               <Services />
               <Record />
               <Resume />
