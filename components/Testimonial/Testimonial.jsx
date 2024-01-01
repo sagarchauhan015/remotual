@@ -7,7 +7,7 @@ import Image from "next/image"
 import headCircle from '@/public/images/heading_circle.svg'
 
 
-export default function Testimonial() {
+export default function Testimonial(props) {
   return (
     <div className="lg:mt-0 lg:shadow-none lg:pl-[30px] lg:pr-[60px] bg-white mt-[40px] p-[20px] rounded-lg overflow-hidden shadow-[3.24px_3.24px_8.09px_0px_rgba(0,0,0,0.10)]">
       <div className="relative mb-3">
@@ -21,7 +21,15 @@ export default function Testimonial() {
         <div>
           <Image src={commaStart}></Image>
         </div>
-        <Slider/>
+        {
+          props.user?.feedback.testimonials.length > 0 ?
+            <Slider
+              testimonials={props.user?.feedback.testimonials}
+            />
+            :
+            ""
+        }
+        
         <div className="absolute right-0  top-3/4 flex justify-end">
           <Image src={commaEnd}></Image>
         </div>

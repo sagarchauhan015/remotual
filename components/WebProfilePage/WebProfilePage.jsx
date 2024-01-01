@@ -40,28 +40,42 @@ export default function WebProfilePage(props) {
                                 <AboutMe 
                                     user={props.user}
                                 />
-                                <Services />
-                                <Record />
+                                <Services 
+                                    user={props.user}
+                                />
+                                <Record 
+                                    user={props.user}
+                                />
                             </div>
                         </>,
                         'resume': 
                         <>
                             <div className='w-full h-[95%] overflow-scroll bg-white z-0 rounded-[0_8px_8px_0] '>
-                                <Resume />
-                                <Skills />
+                                <Resume 
+                                    user={props.user}
+                                />
+                                <Skills 
+                                    user={props.user}
+                                />
                             </div>
                         </>,
                         'feedback': 
                         <>
                             <div className='w-full h-[95%] overflow-scroll bg-white z-0 rounded-[0_8px_8px_0] '>
-                                <Recommendation />
-                                <Testimonial />
+                                <Recommendation 
+                                    user={props.user}
+                                />
+                                <Testimonial 
+                                    user={props.user}
+                                />
                             </div>
                         </>,
                         'playlist': 
                         <>
                             <div className='w-full h-[95%] overflow-scroll bg-white z-0 rounded-[0_8px_8px_0] '>
-                                <AboutVideo />
+                                <AboutVideo 
+                                    user={props.user}
+                                />
                             </div>
                         </>,
                     }[tabName]

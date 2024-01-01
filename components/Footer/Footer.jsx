@@ -24,31 +24,31 @@ export default function Footer() {
               </div>
             </div>
     
-            <div className="pt-[50px] grid grid-cols-2 lg:grid-cols-3 lg:w-[50%] lg:justify-items-end gap-10 text-white text-sm">
+            <div className="grid grid-cols-2 lg:grid-cols-3 lg:w-[50%] lg:justify-items-end gap-10 text-white text-sm">
               <div className="flex flex-col gap-4">
                 <h1 className=" text-[#FF7A00] text-[24px] font-semibold">About</h1>
                 <p className="cursor-pointer">About Us</p>
-                <p className="cursor-pointer">Label</p>
-                <p className="cursor-pointer">Label</p>
-                <p className="cursor-pointer">Label</p>
+                <p className="cursor-pointer">Services</p>
+                <p className="cursor-pointer">Customer Stories</p>
+                <p className="cursor-pointer">Team</p>
               </div>
               <div className="flex flex-col gap-4">
                 <h1 className=" text-[#FF7A00] text-[24px] font-semibold">
                   Company
                 </h1>
-                <p className="cursor-pointer">Contact Us</p>
                 <p className="cursor-pointer">Careers</p>
-                <p className="cursor-pointer">Label</p>
-                <p className="cursor-pointer">Label</p>
+                <p className="cursor-pointer">Blog</p>
+                <p className="cursor-pointer">FAQ's</p>
+                <p className="cursor-pointer">Community</p>
               </div>
               <div className="flex flex-col gap-4">
                 <h1 className=" text-[#FF7A00] text-[24px] font-semibold">
                   Resources
                 </h1>
-                <p className="cursor-pointer">Pricing</p>
-                <p className="cursor-pointer">Customer Stories</p>
-                <p className="cursor-pointer">Label</p>
-                <p className="cursor-pointer">Label</p>
+                <p className="cursor-pointer">Privacy Policy</p>
+                <p className="cursor-pointer">Terms of Service</p>
+                <p className="cursor-pointer">FAQ's</p>
+                {/* <p className="cursor-pointer">Label</p> */}
               </div>
               <div className="lg:hidden flex flex-col gap-4">
                 <h1 className=" text-[#FF7A00] text-[24px] font-semibold">

@@ -268,17 +268,25 @@ const dataJson = {
             testimonials: [
                 {
                     name: "Rod T.",
-                    destination: "Automation Manager",
-                    companyName: "Remotual",
+                    image: "",
+                    projectTitle: "Automation Manager At Remotual",
                     star: 5,
                     tagline: "Celebrating exceptional commintment!",
                     description: "Since joining us, Mika Mae's dedication, proactiveness, and willingness to learn have truly stood out. Her passion for her role and her consistent efforts to go above and beyond have not gone unnoticed."
                 },
+                {
+                    name: "Rod T.",
+                    image: "",
+                    projectTitle: "Automation Manager At Remotual",
+                    star: 5,
+                    tagline: "Celebrating exceptional commintment!",
+                    description: "Since joining us, Mika Mae's dedication, proactiveness, and willingness to learn have truly stood out. Her passion for her role and her consistent efforts to go above and beyond have not gone unnoticed."
+                }
             ]
         },
         videoPlaylist: {
             description: "Hey there! Ready to put a face to the name? Dive into a 2-3 minute video where I spill the beans on who I am, what makes me tick, and the heart behind Remotual. It's not your typical intro—expect a dash of personality, a sprinkle of passion, and a whole lot of real talk. Hit play, and let's kick off this journey together!",
-            youtubeLink: ""
+            youtubeLink: "https://youtu.be/d2HIQoKPsEI?si=2jH6WKT5Vc9wmsqt"
         }
     },
     carlota: {
@@ -414,6 +422,7 @@ const dataJson = {
                 {
                     name: "Hashim Niaz",
                     projectTitle: "Beneloyal Insurance Agency Project",
+                    image: "",
                     star: 5,
                     tagline: "New Star Rookie on the Team",
                     description: "I wanted to take a moment to recognize her exceptional performance in the lead generation process. Her dedication, commitment, and outstanding results have not gone unnoticed. Her recent achievements being the new star rookie on the team, including 3 meetings booked have been nothing short of remarkable."

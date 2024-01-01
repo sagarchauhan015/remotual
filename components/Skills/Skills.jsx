@@ -24,7 +24,7 @@ import softskills from "@/public/images/softskills.svg"
 import headCircle from '@/public/images/heading_circle.svg'
 
 
-export default function Skills() {
+export default function Skills(props) {
   return (
     <div className="lg:mt-0 lg:shadow-none lg:pl-[30px] lg:pr-[60px] bg-white mt-[40px] p-[20px] rounded-lg overflow-hidden shadow-[3.24px_3.24px_8.09px_0px_rgba(0,0,0,0.10)]">
       <div className="relative mb-3">
@@ -157,39 +157,16 @@ export default function Skills() {
           </div>
 
           <div className="flex flex-col gap-4">
-            <div className="flex gap-4">
-              <Image src={checked}></Image>
-              <p className=" text-[15px] font-medium">Cold Calling</p>
-            </div>
-
-            <div className="flex gap-4">
-              <Image src={checked}></Image>
-              <p className=" text-[15px] font-medium">
-                Booking/Appointment Setting
-              </p>
-            </div>
-            <div className="flex gap-4">
-              <Image src={checked}></Image>
-              <p className=" text-[15px] font-medium">Social Media Manager</p>
-            </div>
-            <div className="flex gap-4">
-              <Image src={checked}></Image>
-              <p className=" text-[15px] font-medium">Database Manager</p>
-            </div>
-            <div className="flex gap-4">
-              <Image src={checked}></Image>
-              <p className=" text-[15px] font-medium">Listing Coordinator</p>
-            </div>
-            <div className="flex gap-4">
-              <Image src={checked}></Image>
-              <p className=" text-[15px] font-medium">Critical Thinking</p>
-            </div>
-            <div className="flex gap-4">
-              <Image src={checked}></Image>
-              <p className=" text-[15px] font-medium">
-                Transaction Coordinator
-              </p>
-            </div>
+            {
+              props.user?.resume.hardSkills.map((skill) => {
+                return (
+                  <div className="flex gap-4">
+                    <Image src={checked}></Image>
+                    <p className=" text-[15px] font-medium">{skill}</p>
+                  </div>
+                )
+              })
+            }
           </div>
         </div>
 
@@ -204,35 +181,16 @@ export default function Skills() {
           </div>
 
           <div className="flex flex-col gap-4">
-            <div className="flex gap-4">
-              <Image src={checked}></Image>
-              <p className=" text-[15px] font-medium">Leadership</p>
-            </div>
-
-            <div className="flex gap-4">
-              <Image src={checked}></Image>
-              <p className=" text-[15px] font-medium">Adaptability</p>
-            </div>
-            <div className="flex gap-4">
-              <Image src={checked}></Image>
-              <p className=" text-[15px] font-medium">Customer Service</p>
-            </div>
-            <div className="flex gap-4">
-              <Image src={checked}></Image>
-              <p className=" text-[15px] font-medium">Critical Thinking</p>
-            </div>
-            <div className="flex gap-4">
-              <Image src={checked}></Image>
-              <p className=" text-[15px] font-medium">Time Management</p>
-            </div>
-            <div className="flex gap-4">
-              <Image src={checked}></Image>
-              <p className=" text-[15px] font-medium">Organizational Skills</p>
-            </div>
-            <div className="flex gap-4">
-              <Image src={checked}></Image>
-              <p className=" text-[15px] font-medium">Strong Work Ethics</p>
-            </div>
+            {
+              props.user?.resume.softSkills.map((skill) => {
+                return (
+                  <div className="flex gap-4">
+                    <Image src={checked}></Image>
+                    <p className=" text-[15px] font-medium">{skill}</p>
+                  </div>
+                )
+              })
+            }
           </div>
         </div>
       </div>

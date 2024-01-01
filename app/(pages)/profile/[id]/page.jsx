@@ -23,13 +23,27 @@ export default function page(props) {
               <AboutMe 
                 user = {dataJson[props.params.id]}
               />
-              <Services />
-              <Record />
-              <Resume />
-              <Skills />
-              <Recommendation />
-              <Testimonial />
-              <AboutVideo />
+              <Services 
+                user={dataJson[props.params.id]}
+              />
+              <Record 
+                user = {dataJson[props.params.id]}
+              />
+              <Resume 
+                user = {dataJson[props.params.id]}
+              />
+              <Skills 
+                user = {dataJson[props.params.id]}
+              />
+              <Recommendation 
+                user = {dataJson[props.params.id]}
+              />
+              <Testimonial 
+                user = {dataJson[props.params.id]}
+              />
+              <AboutVideo 
+                user = {dataJson[props.params.id]}
+              />
             </div>
             <div>
               <BottomNav />

@@ -9,7 +9,7 @@ import recordRating from '@/public/images/recordRating.svg'
 
 
 
-export default function Record() {
+export default function Record(props) {
   return (
     <>
         <div className='px-5 py-3 mt-[40px] lg:mt-0 lg:shadow-none lg:pl-[30px] lg:pr-[60px]  bg-white rounded-lg overflow-hidden shadow-[3.24px_3.24px_8.09px_0px_rgba(0,0,0,0.10)]'>
@@ -25,22 +25,22 @@ export default function Record() {
                 </div>
                 <div className='w-full p-4 grid place-items-center z-0'>
                     <Image src={serviceProfile} height={50} width={50}></Image>
-                    <p className='font-semibold text-[30px] my-2'>50+</p>
+                      <p className='font-semibold text-[30px] my-2'>{props.user?.trackRecord.clients}+</p>
                     <p className='font-semibold text-[13px]'>Clients</p>
                 </div>
                 <div className='w-full p-4 grid place-items-center z-0'>
                     <Image src={recordTask} height={50} width={50}></Image>
-                    <p className='font-semibold text-[30px] my-2'>400+</p>
+                    <p className='font-semibold text-[30px] my-2'>{props.user?.trackRecord.projects}+</p>
                     <p className='font-semibold text-[13px]'>Projects</p>
                 </div>
                 <div className='w-full p-4 grid place-items-center z-0'>
                     <Image src={recordBag} height={50} width={50}></Image>
-                    <p className='font-semibold text-[30px] my-2'>5+</p>
+                    <p className='font-semibold text-[30px] my-2'>{props.user?.trackRecord.experience}+</p>
                     <p className='font-semibold text-[13px]'>Year of Experience</p>
                 </div>
                 <div className='w-full p-4 grid place-items-center z-0'>
                     <Image src={recordRating} height={50} width={50}></Image>
-                    <p className='font-semibold text-[30px] my-2'>5</p>
+                    <p className='font-semibold text-[30px] my-2'>{props.user?.trackRecord.ratings}</p>
                     <p className='font-semibold text-[13px]'>User Rating</p>
                 </div>
             </div>
