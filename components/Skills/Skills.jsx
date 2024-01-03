@@ -3,19 +3,9 @@ import React from "react"
 import line from "@/public/images/line.svg"
 import design from "@/public/images/design.svg"
 import line2 from "@/public/images/line2.svg"
-import canva from "@/public/images/canva.svg"
-import photoshop from "@/public/images/photoshop.svg"
-import filmora from "@/public/images/filmora.svg"
-import capcut from "@/public/images/capcut.svg"
-import bar1 from "@/public/images/bar1.svg"
-import bar2 from "@/public/images/bar2.svg"
-import bar3 from "@/public/images/bar3.svg"
-import bar4 from "@/public/images/bar4.svg"
+
 import projectManagement from "@/public/images/projectManagement.svg"
-import clickup from "@/public/images/clickup.svg"
-import asana from "@/public/images/asana.svg"
-import hubspot from "@/public/images/hubspot.svg"
-import notion from "@/public/images/notion.svg"
+
 import orangedot from "@/public/images/orangedot.svg"
 import graydot from "@/public/images/graydot.svg"
 import harskills from "@/public/images/hardskills.svg"
@@ -46,34 +36,19 @@ export default function Skills(props) {
           </div>
 
           <div className="grid grid-cols-1 gap-6">
-            <div className="flex flex-col gap-2">
-              <Image src={canva}></Image>
-              <Image className="w-full" src={bar1}></Image>
-            </div>
-
-            <div className="flex flex-col gap-2">
-              <div className="flex gap-2">
-                <Image src={photoshop}></Image>
-                <p className=" text-[15px] font-medium">Adobe Photoshop</p>
-              </div>
-              <Image className="w-full" src={bar2}></Image>
-            </div>
-
-            <div className="flex flex-col gap-2">
-              <div className="flex gap-2">
-                <Image src={filmora}></Image>
-                <p className=" text-[15px] font-medium">Filmora</p>
-              </div>
-              <Image className="w-full" src={bar3}></Image>
-            </div>
-
-            <div className="flex flex-col gap-2">
-              <div className="flex gap-2">
-                <Image src={capcut}></Image>
-                <p className=" text-[15px] font-medium">Capcut</p>
-              </div>
-              <Image className="w-full" src={bar4}></Image>
-            </div>
+            {
+              props.user?.resume.skills.map((skill) => {
+                return(
+                  <div className="flex flex-col gap-2">
+                    <div className="flex gap-2">
+                      <Image src={skill.logo}></Image>
+                      <p className=" text-[15px] font-medium">{skill.name}</p>
+                    </div>
+                    <Image className="w-full" src={skill.level}></Image>
+                  </div>
+                )
+              })
+            }
           </div>
         </div>
 
@@ -88,21 +63,32 @@ export default function Skills(props) {
           </div>
 
           <div className="lg:mt-8 flex flex-col gap-6">
-            <div className="flex items-center gap-6">
-              <Image src={clickup}></Image>
-              <div className="w-full flex justify-between">
-                <Image src={orangedot}></Image>
-                <Image src={orangedot}></Image>
-                <Image src={orangedot}></Image>
-                <Image src={orangedot}></Image>
-                <Image src={orangedot}></Image>
-                <Image src={orangedot}></Image>
-                <Image src={orangedot}></Image>
-                <Image src={graydot}></Image>
-              </div>
-            </div>
+            {
+              props.user?.resume.projectManagement.map((skill) => {
+                return (
+                  <div className="flex items-center gap-6">
+                    <Image src={skill.logo}></Image>
+                    <div className="w-full flex justify-between">
+                      {
+                        [1,2,3,4,5,6,7,8].map((value) => {
+                          return(
+                            
+                            value <= skill.level ?
+                            <Image src={orangedot}></Image>:
+                            <Image src={graydot}></Image>
+                            
+                          )
+                        })
+                      }
+                      
+                    </div>
+                  </div>
+                )
+              })
+            }
+            
 
-            <div className="flex items-center gap-6">
+            {/* <div className="flex items-center gap-6">
               <Image src={asana}></Image>
               <div className="w-full flex justify-between">
                 <Image src={orangedot}></Image>
@@ -142,7 +128,7 @@ export default function Skills(props) {
                 <Image src={graydot}></Image>
                 <Image src={graydot}></Image>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
 

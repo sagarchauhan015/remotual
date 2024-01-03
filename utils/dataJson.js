@@ -1,9 +1,45 @@
+// features section sales page 
+import valueGif from '@/public/images/valueGif.gif'
+import lockGif from '@/public/images/lockGif.gif'
+import efficiencyGif from '@/public/images/gif/efficiency.gif'
+import protectionGif from '@/public/images/protectionGif.gif'
+import browserGif from '@/public/images/browserGif.gif'
+import transparent_pricingGif from '@/public/images/gif/transparent_pricing.gif'
+import eaChurn from '@/public/images/gif/eaChurn.gif'
+import globeGif from '@/public/images/globeGif.png'
+import plugGif from '@/public/images/plugGif.gif'
+
+// team 
+import team1 from '@/public/images/team_profile1.svg'
+import team2 from '@/public/images/team_profile2.svg'
+import team3 from '@/public/images/team_profile3.svg'
+import team4 from '@/public/images/team_profile4.svg'
+import team5 from '@/public/images/team_profile5.svg'
+import team6 from '@/public/images/team_profile6.svg'
+
+
+// skills 
+// mika 
+import canva from "@/public/images/canva.svg"
+import photoshop from "@/public/images/photoshop.svg"
+import filmora from "@/public/images/filmora.svg"
+import capcut from "@/public/images/capcut.svg"
+import bar1 from "@/public/images/bar1.svg"
+import bar2 from "@/public/images/bar2.svg"
+import bar3 from "@/public/images/bar3.svg"
+import bar4 from "@/public/images/bar4.svg"
+
+import clickup from "@/public/images/clickup.svg"
+import asana from "@/public/images/asana.svg"
+import hubspot from "@/public/images/hubspot.svg"
+import notion from "@/public/images/notion.svg"
+
 const dataJson = {
     salesPage: {
         heroLine: "Let's dive into what makes Remotual so awesome",
         features: {
             tab1: {
-                illustration: "",
+                illustration: valueGif,
                 content: {
                     heading: "Dedicated Task Force with a Dedicated EA",
                     details: [
@@ -14,7 +50,7 @@ const dataJson = {
                 }
             },
             tab2: {
-                illustration: "",
+                illustration: lockGif,
                 content: {
                     heading: "Unlock Limitless Growth with Us!",
                     details: [
@@ -24,7 +60,7 @@ const dataJson = {
                 }
             },
             tab3: {
-                illustration: "",
+                illustration: efficiencyGif,
                 content: {
                     heading: "Efficiency Crusaders",
                     details: [
@@ -33,7 +69,7 @@ const dataJson = {
                 }
             },
             tab4: {
-                illustration: "",
+                illustration: eaChurn,
                 content: {
                     heading: "EA Churn Protection",
                     details: [
@@ -43,7 +79,7 @@ const dataJson = {
                 }
             },
             tab5: {
-                illustration: "",
+                illustration: plugGif,
                 content: {
                     heading: "Plug-And-Play",
                     details: [
@@ -52,7 +88,7 @@ const dataJson = {
                 }
             },
             tab6: {
-                illustration: "",
+                illustration: browserGif,
                 content: {
                     heading: "Live Command Center",
                     details: [
@@ -61,7 +97,7 @@ const dataJson = {
                 }
             },
             tab7: {
-                illustration: "",
+                illustration: transparent_pricingGif,
                 content: {
                     heading: "Transparent Pricing",
                     details: [
@@ -82,39 +118,45 @@ const dataJson = {
                 }
             }
         },
-        team: { 
+        teams: { 
             headline: "Building Your Success Team.",
             tagline: "Meet our Top - Class EAs",
             team: [
                 {
-                    name:"",
-                    image: "",
-                    redirect_url: ""
+                    name:"Mikka Mae U.",
+                    title:"Executive Assitant at Remotual",
+                    image: team1,
+                    redirect_url: "/profile/mika"
                 },
                 {
-                    name:"",
-                    image: "",
-                    redirect_url: ""
+                    name:"Cartola A.",
+                    title:"Executive Assitant at Remotual",
+                    image: team2,
+                    redirect_url: "/profile/cartola"
                 },
                 {
-                    name:"",
-                    image: "",
-                    redirect_url: ""
+                    name:"Hoda A.",
+                    title:"Executive Assitant at Remotual",
+                    image: team3,
+                    redirect_url: "/profile/hoda"
                 },
                 {
-                    name:"",
-                    image: "",
-                    redirect_url: ""
+                    name:"Julie A.",
+                    title:"Executive Assitant at Remotual",
+                    image: team5,
+                    redirect_url: "/profile/jae"
                 },
                 {
-                    name:"",
-                    image: "",
-                    redirect_url: ""
+                    name:"Jacqueline M.",
+                    title:"Executive Assitant at Remotual",
+                    image: team4,
+                    redirect_url: "/profile/jacqueline"
                 },
                 {
-                    name:"",
-                    image: "",
-                    redirect_url: ""
+                    name:"Mudassar A.",
+                    title:"Executive Assitant at Remotual",
+                    image: team6,
+                    redirect_url: "/profile/mudassar"
                 }
             ]
         },
@@ -154,7 +196,7 @@ const dataJson = {
             linkedin: "",
             mail: "",
             phoneNo: "",
-            hiremeLink: ""
+            hiremeLink: "https://remotual.com/pricing"
         },
         about: {
             description: "I’m Mikka Mae, an Executive Assistant at Remotual.  I have experience of international client collaboration in diverse industries including real estate, coaching, CEO support, and media expertise as well as graphic and web design.",
@@ -208,42 +250,46 @@ const dataJson = {
                     "From scheduling to strategic execution, I ensure our leadership soars."
                 ]
             },
-            skills: {
-                canva: {
-                    logo: "",
-                    level: 7
+            skills: [
+                {
+                    logo: canva,
+                    name: "Canva",
+                    level: bar1
                 },
-                adobePhotoshop: {
-                    logo: "",
-                    level: 9,
+                {
+                    logo: photoshop,
+                    name: "Adobe Photoshop",
+                    level: bar2,
                 },
-                filmora: {
-                    logo: "",
-                    level: 8
+                {
+                    logo: filmora,
+                    name: "Filmora",
+                    level: bar3
                 },
-                capcut: {
-                    logo: "",
-                    level: 8
+                {
+                    logo: capcut,
+                    name: "Capcut",
+                    level: bar4
                 }
-            },
-            projectManagement: {
-                clickup: {
-                    logo: "",
+            ],
+            projectManagement: [
+                {
+                    logo: clickup,
                     level: 7
                 },
-                asana: {
-                    logo: "",
+                {
+                    logo: asana,
                     level: 6,
                 },
-                hubspot: {
-                    logo: "",
+                {
+                    logo: hubspot,
                     level: 6
                 },
-                notion: {
-                    logo: "",
+                {
+                    logo: notion,
                     level: 5
                 }
-            },
+            ],
             hardSkills: [
                 "Cold Calling",
                 "Booking/Appointment Setting",
@@ -433,7 +479,20 @@ const dataJson = {
             description: "Hey there! Ready to put a face to the name? Dive into a 2-3 minute video where I spill the beans on who I am, what makes me tick, and the heart behind Remotual. It's not your typical intro—expect a dash of personality, a sprinkle of passion, and a whole lot of real talk. Hit play, and let's kick off this journey together!",
             youtubeLink: ""
         }
+    },
+    hoda: {
+
+    },
+    jacqueline: {
+
+    },
+    jae: {
+
+    },
+    mudassar: {
+
     }
+
 }
 
 export default dataJson;

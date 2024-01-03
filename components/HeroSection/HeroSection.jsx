@@ -1,14 +1,7 @@
 'use client'
 import {useState} from 'react'
 import Image from 'next/image'
-import valueGif from '@/public/images/valueGif.gif'
-import lockGif from '@/public/images/lockGif.gif'
-// import timeGif from '@/public/images/timeGif.gif'
-import protectionGif from '@/public/images/protectionGif.gif'
-import browserGif from '@/public/images/browserGif.gif'
-import globeGif from '@/public/images/globeGif.png'
-// import dollarGif from '@/public/images/dollarGif.gif'
-import plugGif from '@/public/images/plugGif.gif'
+
 import value from '@/public/images/value.svg'
 import valueFocus from '@/public/images/value_focus.svg'
 import lock from '@/public/images/lock.svg'
@@ -50,14 +43,14 @@ export default function HeroSection() {
                     <div className="w-full md:w-[600px] md:h-[510px] rounded-[20px] order-2 md:order-1 shadow-[6px_6px_7px_0px_rgba(0,0,0,0.05)] bg-white flex justify-center items-center overflow-hidden">
                         {
                             {
-                                'tab1': <><Image src={valueGif} height={1000} width={1000} alt='gif'></Image></>,
-                                'tab2': <><Image src={lockGif} height={1000} width={1000} alt='gif'></Image></>,
-                                'tab3': <><Image src={valueGif} height={1000} width={1000} alt='gif'></Image></>,
-                                'tab4': <><Image src={protectionGif} height={1000} width={1000} alt='gif'></Image></>,
-                                'tab5': <><Image src={plugGif} height={1000} width={1000} alt='gif'></Image></>,
-                                'tab6': <><Image src={browserGif} height={1000} width={1000} alt='gif'></Image></>,
-                                'tab7': <><Image src={valueGif} height={1000} width={1000} alt='gif'></Image></>,
-                                'tab8': <><Image src={globeGif} height={1000} width={1000} alt='gif'></Image></>,
+                                  'tab1': <><Image src={dataJson.salesPage.features.tab1.illustration} height={1000} width={1000} alt='gif'></Image></>,
+                                  'tab2': <><Image src={dataJson.salesPage.features.tab2.illustration} height={1000} width={1000} alt='gif'></Image></>,
+                                  'tab3': <><Image src={dataJson.salesPage.features.tab3.illustration} height={1000} width={1000} alt='gif'></Image></>,
+                                  'tab4': <><Image src={dataJson.salesPage.features.tab4.illustration} height={1000} width={1000} alt='gif'></Image></>,
+                                  'tab5': <><Image src={dataJson.salesPage.features.tab5.illustration} height={1000} width={1000} alt='gif'></Image></>,
+                                  'tab6': <><Image src={dataJson.salesPage.features.tab6.illustration} height={1000} width={1000} alt='gif'></Image></>,
+                                  'tab7': <><Image src={dataJson.salesPage.features.tab7.illustration} height={1000} width={1000} alt='gif'></Image></>,
+                                  'tab8': <><Image src={dataJson.salesPage.features.tab1.illustration} height={1000} width={1000} alt='gif'></Image></>,
                             }[tabValue]
                         }
                     </div>
