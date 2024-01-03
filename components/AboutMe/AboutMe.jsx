@@ -23,22 +23,22 @@ export default function AboutMe(props) {
                     <div className='lg:py-[10px]'>
                         <div className="flex justify-between items-center my-3 text-[12.5px] font-normal">
                             <div className='bg-[#FF7A00] text-white px-5'>Age....</div>
-                            <div>25</div>
+                            <div>{props.user?.about.age}</div>
                         </div>
                         <div className='h-[1px] bg-[linear-gradient(90deg,_rgba(255,255,255,1)_0%,_rgba(136,136,136,0.3)_50%,_rgba(255,255,255,1)_100%)]'></div>
                         <div className="flex justify-between items-center my-3 text-[12.5px] font-normal">
                             <div className='bg-[#FF7A00] text-white px-5'>Location....</div>
-                            <div>India</div>
+                            <div>{props.user?.about.location}</div>
                         </div>
                         <div className='h-[1px] bg-[linear-gradient(90deg,_rgba(255,255,255,1)_0%,_rgba(136,136,136,0.3)_50%,_rgba(255,255,255,1)_100%)]'></div>
                         <div className="flex justify-between items-center my-3 text-[12.5px] font-normal">
                             <div className='bg-[#FF7A00] text-white px-5'>Availability....</div>
-                            <div>40 hours/week</div>
+                            <div>{props.user?.about.availability}+ hours/week</div>
                         </div>
                         <div className='h-[1px] bg-[linear-gradient(90deg,_rgba(255,255,255,1)_0%,_rgba(136,136,136,0.3)_50%,_rgba(255,255,255,1)_100%)]'></div>
                         <div className="flex justify-between items-center mt-3 text-[12.5px] font-normal">
                             <div className='bg-[#FF7A00] text-white px-5'>EA Experience....</div>
-                            <div>6+ years</div>
+                            <div>{props.user?.about.experience}+ years</div>
                         </div>
                     </div>
                 </div>

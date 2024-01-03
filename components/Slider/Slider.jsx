@@ -10,7 +10,10 @@ import star from "@/public/images/star.svg"
 import commaStart from "@/public/images/commaStart.svg"
 import commaEnd from "@/public/images/commaEnd.svg"
 import Image from "next/image"
-export default function Slider() {
+export default function Slider(props) {
+
+  const loopArray = Array.from({ length: 5 }, (_, i) => i);
+
   const indicatorStyles = {
     background: "#D9D9D9",
     width: 10,
@@ -52,102 +55,51 @@ export default function Slider() {
         )
       }}
     >
-      <div className="">
-        <div className="w-[75%] h-[75%]  mx-auto">
-          <div className="flex gap-4 items-center justify-center">
+      {
+        props.testimonials?.map((testimonial) => {
+          return (
             <div className="">
-              <Image className="w-[60px]" src={profile}></Image>
-            </div>
+              <div className="w-[75%] h-[75%]  mx-auto">
+                <div className="flex gap-4 items-center justify-center">
+                  <div className="">
+                    <Image className="w-[60px]" src={profile}></Image>
+                  </div>
 
-            <div className="flex flex-col justify-between">
-              <p className="text-[15px] font-medium text-left">Rod T.</p>
-              <p className="text-[13px]">Automation Manager At Remotual</p>
-              <div className="flex gap-2 h-[12px] w-fit">
-                <Image src={star}></Image>
-                <Image src={star}></Image>
-                <Image src={star}></Image>
-                <Image src={star}></Image>
-                <Image src={star}></Image>
+                  <div className="flex flex-col justify-between">
+                    <p className="text-[15px] font-medium text-left">{testimonial.name}</p>
+                    <p className="text-[13px]">{testimonial.projectTitle}</p>
+                    <div className="flex gap-2 h-[12px] w-fit">
+                      {
+                        loopArray.map((number) => {
+                          return (
+                            <>
+                              {
+                                testimonial.star >= number + 1 ?
+                                  <Image src={star}></Image>
+                                  :
+                                  ""
+                              }
+                            </>
+                          )
+                        })
+                      }
+                    </div>
+                  </div>
+                </div>
+                <div className="flex flex-col justify-center items-center gap-4 mt-6">
+                  <p className="text-[15px] font-medium text-center">
+                    {testimonial.tagline}
+                  </p>
+                  <p className="text-[13px] pb-10 text-center">
+                    {testimonial.description}
+                  </p>
+                </div>
               </div>
             </div>
-          </div>
-          <div className="flex flex-col justify-center items-center gap-4 mt-6">
-            <p className="text-[15px] font-medium text-center">
-              Celebrating exceptional commintment!
-            </p>
-            <p className="text-[13px] pb-10 text-center">
-              Since joining us, Mika Mae's dedication, proactiveness, and
-              willingness to learn have truly stood out. Her passion for her
-              role and her consistent efforts to go above and beyond have
-              not gone unnoticed.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div className="">
-        <div className="w-[75%]  mx-auto">
-          <div className="flex gap-4 items-center justify-center">
-            <div className="">
-              <Image className="w-[60px]" src={profile}></Image>
-            </div>
-
-            <div className="flex flex-col justify-between">
-              <p className="text-[15px] font-medium text-left">Rod T.</p>
-              <p className="text-[13px]">Automation Manager At Remotual</p>
-              <div className="flex gap-2 h-[12px] w-fit">
-                <Image src={star}></Image>
-                <Image src={star}></Image>
-                <Image src={star}></Image>
-                <Image src={star}></Image>
-                <Image src={star}></Image>
-              </div>
-            </div>
-          </div>
-          <div className="flex flex-col justify-center items-center gap-4 mt-6">
-            <p className="text-[15px] font-medium text-center">
-              Celebrating exceptional commintment!
-            </p>
-            <p className="text-[13px] pb-10 text-center">
-              Since joining us, Mika Mae's dedication, proactiveness, and
-              willingness to learn have truly stood out. Her passion for her
-              role and her consistent efforts to go above and beyond have
-              not gone unnoticed.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div className="">
-        <div className="w-[75%]  mx-auto">
-          <div className="flex gap-4 items-center justify-center">
-            <div className="">
-              <Image className="w-[60px]" src={profile}></Image>
-            </div>
-
-            <div className="flex flex-col justify-between">
-              <p className="text-[15px] font-medium text-left">Rod T.</p>
-              <p className="text-[13px]">Automation Manager At Remotual</p>
-              <div className="flex gap-2 h-[12px] w-fit">
-                <Image src={star}></Image>
-                <Image src={star}></Image>
-                <Image src={star}></Image>
-                <Image src={star}></Image>
-                <Image src={star}></Image>
-              </div>
-            </div>
-          </div>
-          <div className="flex flex-col justify-center items-center gap-4 mt-6">
-            <p className="text-[15px] font-medium text-center">
-              Celebrating exceptional commintment!
-            </p>
-            <p className="text-[13px] pb-10 text-center">
-              Since joining us, Mika Mae's dedication, proactiveness, and
-              willingness to learn have truly stood out. Her passion for her
-              role and her consistent efforts to go above and beyond have
-              not gone unnoticed.
-            </p>
-          </div>
-        </div>
-      </div>
+          )
+        })
+      }
+      
     </Carousel>
   )
 }

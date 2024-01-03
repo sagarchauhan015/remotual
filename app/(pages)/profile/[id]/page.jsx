@@ -19,17 +19,33 @@ export default function page(props) {
         <Navbar/>
         <div className='bg-[#FFF5EC] pb-[40px] lg:hidden' >
             <div>
-              <Contact />
+              <Contact 
+                user = {dataJson[props.params.id]}
+              />
               <AboutMe 
                 user = {dataJson[props.params.id]}
               />
-              <Services />
-              <Record />
-              <Resume />
-              <Skills />
-              <Recommendation />
-              <Testimonial />
-              <AboutVideo />
+              <Services 
+                user={dataJson[props.params.id]}
+              />
+              <Record 
+                user = {dataJson[props.params.id]}
+              />
+              <Resume 
+                user = {dataJson[props.params.id]}
+              />
+              <Skills 
+                user = {dataJson[props.params.id]}
+              />
+              <Recommendation 
+                user = {dataJson[props.params.id]}
+              />
+              <Testimonial 
+                user = {dataJson[props.params.id]}
+              />
+              <AboutVideo 
+                user = {dataJson[props.params.id]}
+              />
             </div>
             <div>
               <BottomNav />

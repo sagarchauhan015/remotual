@@ -11,7 +11,7 @@ import muteBtn from "@/public/images/mute.svg"
 import headCircle from '@/public/images/heading_circle.svg'
 
 
-export default function AboutVideo() {
+export default function AboutVideo(props) {
   const [domLoaded, setDomLoaded] = useState(false)
   useEffect(() => {
     setDomLoaded(true)
@@ -35,16 +35,12 @@ export default function AboutVideo() {
         Get to Know Mikka in Just 2 min
       </p>
       <p className="text-[12.5px] font-normal text-justify leading-4 mt-[20px]">
-        Hey there! Ready to put a face to the name? Dive into a 2-3 minute video
-        where I spill the beans on who I am, what makes me tick, and the heart
-        behind Remotual. It's not your typical intro—expect a dash of
-        personality, a sprinkle of passion, and a whole lot of real talk. Hit
-        play, and let's kick off this journey together!
+        {props.user?.videoPlaylist.description}
       </p>
       {domLoaded && (
         <div className=" mt-[20px] h-[350px] w-full relative border-[3px] rounded-[20px] overflow-hidden border-[#FF7A00]">
           <ReactPlayer
-            url="https://youtu.be/-lQ3y5OlELU?si=xKMQ90BqyliY2jFd"
+            url={props.user?.videoPlaylist.youtubeLink}
             width="100%"
             height="100%"
             playing={play}

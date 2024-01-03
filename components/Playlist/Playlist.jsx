@@ -6,7 +6,6 @@ import Image from "next/image"
 import thumbnail_1 from "@/public/images/Thumbnail-1.svg"
 import thumbnail_2 from "@/public/images/Thumbnail-2.svg"
 import thumbnail_3 from "@/public/images/Thumbnail-3.svg"
-import thumbnail_4 from "@/public/images/Thumbnail-4.svg"
 import playBtn from "@/public/images/play.svg"
 import unmutebtn from "@/public/images/unmute.svg"
 import pausebtn from "@/public/images/pause.svg"
@@ -15,40 +14,22 @@ import muteBtn from "@/public/images/mute.svg"
 let playlist = [
   {
     id: "vid1",
-    title: "About You and Your Business",
-    url: "https://www.youtube.com/watch?v=kjielW6yXtA",
+    title: "Testimonial 1",
+    url: "https://youtu.be/k1tiepuYmi0",
     img: thumbnail_1,
   },
   {
     id: "vid2",
-    title: "Challenges Impacting Your Business",
-    url: "https://www.youtube.com/watch?v=kjielW6yXtA",
+    title: "Testimonial 2",
+    url: "https://youtu.be/k1tiepuYmi0?t=60",
     img: thumbnail_2,
   },
   {
     id: "vid3",
-    title: "Why Remotual VS Cheaper Alternatives",
-    url: "https://www.youtube.com/watch?v=t8HrZTLRCeU",
+    title: "Testimonial 3",
+    url: "https://youtu.be/k1tiepuYmi0?t=72",
     img: thumbnail_3,
-  },
-  {
-    id: "vid4",
-    title: "Services availing from Remotual",
-    url: "https://www.youtube.com/watch?v=U8A3-ylf6aM",
-    img: thumbnail_4,
-  },
-  {
-    id: "vid5",
-    title: "Services availing from Remotual",
-    url: "https://www.youtube.com/watch?v=U8A3-ylf6aM",
-    img: thumbnail_4,
-  },
-  {
-    id: "vid6",
-    title: "Services availing from Remotual",
-    url: "https://www.youtube.com/watch?v=U8A3-ylf6aM",
-    img: thumbnail_4,
-  },
+  }
 ]
 
 export default function Playlist() {

@@ -7,7 +7,7 @@ import education from "@/public/images/education.svg"
 import headCircle from '@/public/images/heading_circle.svg'
 
 
-export default function Resume() {
+export default function Resume(props) {
   return (
     <div className="lg:mt-0 lg:shadow-none lg:pl-[30px] lg:pr-[60px] bg-white mt-[40px] p-[20px] rounded-lg overflow-hidden shadow-[3.24px_3.24px_8.09px_0px_rgba(0,0,0,0.10)]">
         <div className="relative mb-3">
@@ -26,54 +26,61 @@ export default function Resume() {
             <div className='h-[1px] bg-[linear-gradient(90deg,_rgba(255,255,255,1)_0%,_rgba(136,136,136,0.3)_50%,_rgba(255,255,255,1)_100%)]'></div>
           </div>
           <div className="text-[13px] text-[#FF7A00] font-semibold border-[2px] w-fit px-6 py-[2px] border-[#FF7A00] rounded-[6px]">
-            Aug2023-Present
+            {props.user?.resume.experience.start} - {props.user?.resume.experience.end}
           </div>
-          <p className="text-[18px] font-medium mt-4">Executive Assistant</p>
-          <p className="mt-2 text-[15px] text-[#BDBDBD]">Remotual</p>
+          <p className="text-[18px] font-medium mt-4">{props.user?.resume.experience.destination}</p>
+          <p className="mt-2 text-[15px] text-[#BDBDBD]">{props.user?.resume.experience.companyName}</p>
           <div className="mt-3 px-6 text-[12.5px] text-justify ">
             <ul className="list-disc">
-              <li className="">
-                As the go-to support for our CEO Clients, I'm the
-                behind-the-scenes magic maker.
-              </li>
-              <li className="">
-                From scheduling to strategic execution, I ensure our leadership
-                soars.
-              </li>
+              {
+              
+                props.user?.resume.experience.description.map((describe) => {
+                  return(
+                    <li className="">
+                      {describe}
+                    </li>
+                  )
+                })
+              }
             </ul>
           </div>
         </div>
-
-        <div>
-          <div className="lg:mt-6 flex gap-3 items-center  mt-4">
-            <Image src={education}></Image>
-            <p className="text-[18px] font-semibold">Education</p>
+        {
+          props.user?.resume.education === undefined ?
+          "":
+          <div>
+            <div className="lg:mt-6 flex gap-3 items-center  mt-4">
+              <Image src={education}></Image>
+              <p className="text-[18px] font-semibold">Education</p>
+            </div>
+            <div className="my-[10px]">
+              <div className='h-[1px] bg-[linear-gradient(90deg,_rgba(255,255,255,1)_0%,_rgba(136,136,136,0.3)_50%,_rgba(255,255,255,1)_100%)]'></div>
+            </div>
+            <div className="text-[13px] text-[#BDBDBD] font-semibold border-[2px] w-fit px-6 py-[2px] border-[#BDBDBD] rounded-[6px]">
+              {props.user?.resume.education.start} - {props.user?.resume.education.end}
+            </div>
+            <p className="text-[18px] font-medium mt-4">
+              {props.user?.resume.education.degree}
+            </p>
+            <p className="mt-2 text-[15px] text-[#BDBDBD]">
+              {props.user?.resume.education.schoolName}
+            </p>
+            <div className="mt-3 px-6 text-[12.5px] text-justify">
+              <ul className="list-disc">
+                {
+                  props.user?.resume.education.description.map((describe) => {
+                    return (
+                      <li className="">
+                        {describe}
+                      </li>
+                    )
+                  })
+                }
+              </ul>
+            </div>
           </div>
-          <div className="my-[10px]">
-            <div className='h-[1px] bg-[linear-gradient(90deg,_rgba(255,255,255,1)_0%,_rgba(136,136,136,0.3)_50%,_rgba(255,255,255,1)_100%)]'></div>
-          </div>
-          <div className="text-[13px] text-[#BDBDBD] font-semibold border-[2px] w-fit px-6 py-[2px] border-[#BDBDBD] rounded-[6px]">
-            2015-2019
-          </div>
-          <p className="text-[18px] font-medium mt-4">
-            Bachelor of Science in Psychology
-          </p>
-          <p className="mt-2 text-[15px] text-[#BDBDBD]">
-            University of San Jose Recoletos
-          </p>
-          <div className="mt-3 px-6 text-[12.5px] text-justify">
-            <ul className="list-disc">
-              <li>
-                As the go-to support for our CEO Clients, I'm the
-                behind-the-scenes magic maker.
-              </li>
-              <li>
-                From scheduling to strategic execution, I ensure our leadership
-                soars.
-              </li>
-            </ul>
-          </div>
-        </div>
+        }
+        
       </div>
     </div>
   )
