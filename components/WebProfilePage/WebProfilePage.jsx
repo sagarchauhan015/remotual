@@ -30,7 +30,9 @@ export default function WebProfilePage(props) {
             </div>
             <div className='w-full h-full flex justify-center items-center relative'>
                 <div className='w-[50%] h-full relative z-20'>
-                    <Contact />
+                    <Contact 
+                          user={props.user}
+                    />
                 </div>
                 {
                     {

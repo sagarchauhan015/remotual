@@ -19,7 +19,9 @@ export default function page(props) {
         <Navbar/>
         <div className='bg-[#FFF5EC] pb-[40px] lg:hidden' >
             <div>
-              <Contact />
+              <Contact 
+                user = {dataJson[props.params.id]}
+              />
               <AboutMe 
                 user = {dataJson[props.params.id]}
               />

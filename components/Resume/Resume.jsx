@@ -45,38 +45,42 @@ export default function Resume(props) {
             </ul>
           </div>
         </div>
-
-        <div>
-          <div className="lg:mt-6 flex gap-3 items-center  mt-4">
-            <Image src={education}></Image>
-            <p className="text-[18px] font-semibold">Education</p>
+        {
+          props.user?.resume.education === undefined ?
+          "":
+          <div>
+            <div className="lg:mt-6 flex gap-3 items-center  mt-4">
+              <Image src={education}></Image>
+              <p className="text-[18px] font-semibold">Education</p>
+            </div>
+            <div className="my-[10px]">
+              <div className='h-[1px] bg-[linear-gradient(90deg,_rgba(255,255,255,1)_0%,_rgba(136,136,136,0.3)_50%,_rgba(255,255,255,1)_100%)]'></div>
+            </div>
+            <div className="text-[13px] text-[#BDBDBD] font-semibold border-[2px] w-fit px-6 py-[2px] border-[#BDBDBD] rounded-[6px]">
+              {props.user?.resume.education.start} - {props.user?.resume.education.end}
+            </div>
+            <p className="text-[18px] font-medium mt-4">
+              {props.user?.resume.education.degree}
+            </p>
+            <p className="mt-2 text-[15px] text-[#BDBDBD]">
+              {props.user?.resume.education.schoolName}
+            </p>
+            <div className="mt-3 px-6 text-[12.5px] text-justify">
+              <ul className="list-disc">
+                {
+                  props.user?.resume.education.description.map((describe) => {
+                    return (
+                      <li className="">
+                        {describe}
+                      </li>
+                    )
+                  })
+                }
+              </ul>
+            </div>
           </div>
-          <div className="my-[10px]">
-            <div className='h-[1px] bg-[linear-gradient(90deg,_rgba(255,255,255,1)_0%,_rgba(136,136,136,0.3)_50%,_rgba(255,255,255,1)_100%)]'></div>
-          </div>
-          <div className="text-[13px] text-[#BDBDBD] font-semibold border-[2px] w-fit px-6 py-[2px] border-[#BDBDBD] rounded-[6px]">
-            {props.user?.resume.education.start} - {props.user?.resume.education.end}
-          </div>
-          <p className="text-[18px] font-medium mt-4">
-            {props.user?.resume.education.degree}
-          </p>
-          <p className="mt-2 text-[15px] text-[#BDBDBD]">
-            {props.user?.resume.education.schoolName}
-          </p>
-          <div className="mt-3 px-6 text-[12.5px] text-justify">
-            <ul className="list-disc">
-              {
-                props.user?.resume.education.description.map((describe) => {
-                  return (
-                    <li className="">
-                      {describe}
-                    </li>
-                  )
-                })
-              }
-            </ul>
-          </div>
-        </div>
+        }
+        
       </div>
     </div>
   )

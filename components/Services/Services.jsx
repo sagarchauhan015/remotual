@@ -2,10 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 
 import headCircle from '@/public/images/heading_circle.svg'
-import serviceThumb from '@/public/images/service_thumb.svg'
-import servicePhone from '@/public/images/service_phone.svg'
-import serviceProfile from '@/public/images/service_profile.svg'
-import serviceChart from '@/public/images/service_chart.svg'
+
 
 export default function Services(props) {
   return (
@@ -22,7 +19,7 @@ export default function Services(props) {
                         return (
                             <>
                                 <div className='flex items-start mt-5 lg:flex-col lg:justify-center lg:items-center lg:text-center lg:gap-3'>
-                                    {
+                                    {/* {
                                         service.title === "Customer Service Management" ?
                                             <Image src={serviceThumb} height={50} width={50}></Image>
                                         :
@@ -36,8 +33,8 @@ export default function Services(props) {
                                             <Image src={servicePhone} height={50} width={50}></Image>
                                         :
                                         ""
-                                    }
-
+                                    } */}
+                                    <Image src={service.image} height={50} width={50}></Image>
                                     <div className='ml-5'>
                                         <p className='text-[16px] font-semibold mb-2'>{service.title}</p>
                                         <p className='text-[12.5px] font-normal leading-4 text-justify mb-5'>{service.description}</p>

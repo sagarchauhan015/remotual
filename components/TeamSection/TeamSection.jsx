@@ -49,7 +49,7 @@ export default function TeamSection() {
                     <div className='text-white text-[26px]'>Meet our Top-class EA's</div>
                 </div>
                 <div className="absolute w-full h-full">
-                    <Link href="/profile/mika">
+                    <Link href="/profile/mika" target="_blank">
                         <div className='group h-[170px] w-[170px] rounded-full absolute left-28 top-10 bg-[url("../public/images/team_profile1.svg")] bg-no-repeat bg-cover'>
                             <div className='flex justify-center items-center w-full h-full rounded-full transition-all duration-500 ease-linear cursor-pointer hover:bg-[rgba(255,123,0,0.7)]'>
                                 <div className='hidden transition-all duration-500 group-hover:flex justify-center flex-col items-center'>
@@ -59,7 +59,7 @@ export default function TeamSection() {
                             </div>
                         </div>
                     </Link>
-                    <Link href="/profile/carlota">
+                    <Link href="/profile/carlota" target="_blank">
                         <div className='group h-[150px] w-[150px] rounded-full absolute bottom-40 bg-[url("../public/images/team_profile2.svg")] bg-no-repeat bg-cover'>
                             <div className='flex justify-center items-center w-full h-full rounded-full transition-all duration-500 ease-linear cursor-pointer hover:bg-[rgba(255,123,0,0.7)]'>
                                 <div className='hidden transition-all duration-500 group-hover:flex justify-center flex-col items-center'>
@@ -69,7 +69,7 @@ export default function TeamSection() {
                             </div>
                         </div>
                     </Link>
-                      <Link href="/profile/hoda">
+                      <Link href="/profile/hoda" target="_blank">
                         <div className='group h-[146px] w-[146px] rounded-full absolute bottom-[130px] right-[280px] bg-[url("../public/images/team_profile3.svg")] bg-no-repeat bg-cover'>
                             <div className='flex justify-center items-center w-full h-full rounded-full transition-all duration-500 ease-linear cursor-pointer hover:bg-[rgba(255,123,0,0.7)]'>
                                 <div className='hidden transition-all duration-500 group-hover:flex justify-center flex-col items-center'>
@@ -79,7 +79,7 @@ export default function TeamSection() {
                             </div>
                         </div>
                     </Link>
-                    <Link href="/profile/jacqueline">
+                    <Link href="/profile/jacqueline" target="_blank">
                         <div className='group h-[150px] w-[150px] rounded-full absolute right-0 top-[35%] bg-[url("../public/images/team_profile4.svg")] bg-no-repeat bg-cover'>
                             <div className='flex justify-center items-center w-full h-full rounded-full transition-all duration-500 ease-linear cursor-pointer hover:bg-[rgba(255,123,0,0.7)]'>
                                 <div className='hidden transition-all duration-500 group-hover:flex justify-center flex-col items-center'>
@@ -89,7 +89,7 @@ export default function TeamSection() {
                             </div>
                         </div>
                     </Link>
-                    <Link href="/profile/jae">
+                    <Link href="/profile/jae" target="_blank">
                         <div className='group h-[190px] w-[190px] rounded-full absolute bottom-12 left-[28%] bg-[url("../public/images/team_profile5.svg")] bg-no-repeat bg-cover'>
                             <div className='flex justify-center items-center w-full h-full rounded-full transition-all duration-500 ease-linear cursor-pointer hover:bg-[rgba(255,123,0,0.7)]'>
                                 <div className='hidden transition-all duration-500 group-hover:flex justify-center flex-col items-center'>
@@ -99,7 +99,7 @@ export default function TeamSection() {
                             </div>
                         </div>
                     </Link>
-                    <Link href="/profile/mudassar">
+                    <Link href="/profile/mudassar" target="_blank">
                         <div className='group h-[120px] w-[120px] rounded-full absolute right-[30%] top-24 bg-[url("../public/images/team_profile6.svg")] bg-no-repeat bg-cover'>
                             <div className='flex justify-center items-center w-full h-full rounded-full transition-all duration-500 ease-linear cursor-pointer hover:bg-[rgba(255,123,0,0.7)]'>
                                 <div className='hidden transition-all duration-500 group-hover:flex justify-center flex-col items-center'>
