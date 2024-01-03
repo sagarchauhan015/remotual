@@ -38,7 +38,8 @@ export default function AboutVideo(props) {
         {props.user?.videoPlaylist.description}
       </p>
       {domLoaded && (
-        <div className="lg:px-[80px] mt-[20px] relative border-[3px] rounded-[20px] p-2 border-[#FF7A00]">
+        
+          <div className="m-2 p-1 lg:mt-5 lg:w-full rounded-[20px] overflow-hidden relative" style={{ "aspect-ratio": "16 / 9", "width": "100%;" }}>
           <ReactPlayer
             url={props.user?.videoPlaylist.youtubeLink}
             width="100%"
@@ -59,7 +60,7 @@ export default function AboutVideo(props) {
               ></Image>
             </div>
           </div>
-        </div>
+          </div>
       )}
     </div>
   )

@@ -37,7 +37,7 @@ export default function Playlist() {
   const [currentVideo, setcurrentVideo] = useState({
     id: "vid1",
     title: "About You and Your Business",
-    url: "https://ik.imagekit.io/jkmgqwabx/demo_video1.mp4?updatedAt=1703674276075",
+    url: "https://youtu.be/k1tiepuYmi0",
     img: thumbnail_1,
   })
 
@@ -71,7 +71,7 @@ export default function Playlist() {
       </div>
       {domLoaded && (
         <div className="flex flex-col lg:flex-row justify-between relative my-10 lg:border border-[#FF7A00] rounded-[25px]  w-full">
-          <div className="m-2 p-1 lg:p-0 lg:w-[65%] rounded-[20px] overflow-hidden relative">
+          <div className="m-2 p-1 lg:p-0 lg:w-[65%] rounded-[20px] overflow-hidden relative lg:border border-[#FF7A00]" style={{"aspect-ratio": "16 / 9", "width": "100%;"}}>
             <ReactPlayer
               url={currentVideo.url}
               width="100%"
