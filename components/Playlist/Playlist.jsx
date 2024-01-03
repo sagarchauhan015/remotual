@@ -16,7 +16,7 @@ let playlist = [
   {
     id: "vid1",
     title: "About You and Your Business",
-    url: "https://ik.imagekit.io/jkmgqwabx/demo_video1.mp4?updatedAt=1703674276075",
+    url: "https://www.youtube.com/watch?v=kjielW6yXtA",
     img: thumbnail_1,
   },
   {
@@ -56,7 +56,7 @@ export default function Playlist() {
   const [currentVideo, setcurrentVideo] = useState({
     id: "vid1",
     title: "About You and Your Business",
-    url: "https://ik.imagekit.io/jkmgqwabx/demo_video1.mp4?updatedAt=1703674276075",
+    url: "https://www.youtube.com/watch?v=kjielW6yXtA",
     img: thumbnail_1,
   })
 

@@ -42,9 +42,9 @@ export default function AboutVideo() {
         play, and let's kick off this journey together!
       </p>
       {domLoaded && (
-        <div className="lg:px-[80px] mt-[20px] relative border-[3px] rounded-[20px] p-2 border-[#FF7A00]">
+        <div className=" mt-[20px] h-[350px] w-full relative border-[3px] rounded-[20px] overflow-hidden border-[#FF7A00]">
           <ReactPlayer
-            url="https://ik.imagekit.io/jkmgqwabx/mika_mae.mp4?updatedAt=1703856905812"
+            url="https://youtu.be/-lQ3y5OlELU?si=xKMQ90BqyliY2jFd"
             width="100%"
             height="100%"
             playing={play}
