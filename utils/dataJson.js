@@ -8,6 +8,7 @@ import transparent_pricingGif from '@/public/images/gif/transparent_pricing.gif'
 import eaChurn from '@/public/images/gif/eaChurn.gif'
 import globeGif from '@/public/images/globeGif.png'
 import plugGif from '@/public/images/plugGif.gif'
+import globalTeamGif from '@/public/images/gif/globalTeam.gif'
 
 // team 
 import team1 from '@/public/images/team_profile1.svg'
@@ -204,7 +205,7 @@ const dataJson = {
                 }
             },
             tab8: {
-                illustration: "",
+                illustration: globalTeamGif,
                 content: {
                     heading: "The Backbone for Global Commerce",
                     details: [
@@ -740,7 +741,7 @@ const dataJson = {
         },
         videoPlaylist: {
             description: "Hey there! Ready to put a face to the name? Dive into a 2-3 minute video where I spill the beans on who I am, what makes me tick, and the heart behind Remotual. It's not your typical intro—expect a dash of personality, a sprinkle of passion, and a whole lot of real talk. Hit play, and let's kick off this journey together!",
-            youtubeLink: "https://youtu.be/w6ThPrPJ3ew?si=06o6D8I9k3dbVe8C"
+            youtubeLink: "https://youtu.be/UoUVxyVi7jU?si=Iv59hgb3UQEZwYg_"
         }
     },
     jacqueline: {
@@ -894,10 +895,10 @@ const dataJson = {
         },
         videoPlaylist: {
             description: "Hey there! Ready to put a face to the name? Dive into a 2-3 minute video where I spill the beans on who I am, what makes me tick, and the heart behind Remotual. It's not your typical intro—expect a dash of personality, a sprinkle of passion, and a whole lot of real talk. Hit play, and let's kick off this journey together!",
-            youtubeLink: "https://youtu.be/w6ThPrPJ3ew?si=06o6D8I9k3dbVe8C"
+            youtubeLink: "https://youtu.be/W8NZF7ukYes?si=N9GEXiUWPh3I7O09"
         }
     },
-    jae: {
+    jae: {  
         profile: {
             image: jae_image,
             name: "Julie A.",
@@ -1048,7 +1049,7 @@ const dataJson = {
         },
         videoPlaylist: {
             description: "Hey there! Ready to put a face to the name? Dive into a 2-3 minute video where I spill the beans on who I am, what makes me tick, and the heart behind Remotual. It's not your typical intro—expect a dash of personality, a sprinkle of passion, and a whole lot of real talk. Hit play, and let's kick off this journey together!",
-            youtubeLink: "https://youtu.be/w6ThPrPJ3ew?si=06o6D8I9k3dbVe8C"
+            youtubeLink: "https://youtu.be/WWqSbGGmIIk?si=keIzVEXe5-7fwJOg"
         }
     },
     mudassar: {

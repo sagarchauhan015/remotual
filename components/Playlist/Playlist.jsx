@@ -14,19 +14,19 @@ import muteBtn from "@/public/images/mute.svg"
 let playlist = [
   {
     id: "vid1",
-    title: "About You and Your Business",
+    title: "Testimonial 1",
     url: "https://youtu.be/k1tiepuYmi0",
     img: thumbnail_1,
   },
   {
     id: "vid2",
-    title: "Challenges Impacting Your Business",
+    title: "Testimonial 2",
     url: "https://youtu.be/k1tiepuYmi0?t=60",
     img: thumbnail_2,
   },
   {
     id: "vid3",
-    title: "Why Remotual VS Cheaper Alternatives",
+    title: "Testimonial 3",
     url: "https://youtu.be/k1tiepuYmi0?t=72",
     img: thumbnail_3,
   }

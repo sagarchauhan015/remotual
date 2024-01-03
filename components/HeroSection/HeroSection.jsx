@@ -40,7 +40,7 @@ export default function HeroSection() {
                 </div>
                 <div className='flex justify-between items-center gap-[20px] flex-col md:flex-row '>
 
-                    <div className="w-full md:w-[600px] md:h-[510px] rounded-[20px] order-2 md:order-1 shadow-[6px_6px_7px_0px_rgba(0,0,0,0.05)] bg-white flex justify-center items-center overflow-hidden">
+                    <div className="w-full md:w-[600px] md:h-full rounded-[20px] order-2 md:order-1 shadow-[6px_6px_7px_0px_rgba(0,0,0,0.05)] bg-white flex justify-center items-center overflow-hidden">
                         {
                             {
                                   'tab1': <><Image src={dataJson.salesPage.features.tab1.illustration} height={1000} width={1000} alt='gif'></Image></>,
@@ -50,14 +50,14 @@ export default function HeroSection() {
                                   'tab5': <><Image src={dataJson.salesPage.features.tab5.illustration} height={1000} width={1000} alt='gif'></Image></>,
                                   'tab6': <><Image src={dataJson.salesPage.features.tab6.illustration} height={1000} width={1000} alt='gif'></Image></>,
                                   'tab7': <><Image src={dataJson.salesPage.features.tab7.illustration} height={1000} width={1000} alt='gif'></Image></>,
-                                  'tab8': <><Image src={dataJson.salesPage.features.tab1.illustration} height={1000} width={1000} alt='gif'></Image></>,
+                                  'tab8': <><Image src={dataJson.salesPage.features.tab8.illustration} height="auto" width="auto" alt='gif'></Image></>,
                             }[tabValue]
                         }
                     </div>
 
                     <div className="w-full overflow-scroll fixed bottom-0 bg-[white] md:static p-[8px] md:p-[16px] md:rounded-full  place-items-center  md:w-[fit-content] order-1 md:order-2 justify-center items-center shadow-[5px_-5px_5px_0px_rgba(0,0,0,0.05)]  md:shadow-[5.13px_5.13px_5.985px_0px_rgba(0,0,0,0.05)]">
                         <div className='w-full flex md:flex-col'>
-                            <div className=' min-w-[25%] flex justify-center items-center'>
+                            <div className=' min-w-[22.5%] flex justify-center items-center'>
                                 <div onClick={() => handleTabValue('tab1')} className={tabValue === 'tab1' ? 'bg-[#FFF5EC] transition ease-linear duration-1000 rounded-full w-[fit-content] cursor-pointer flex justify-center items-center p-3 lg:mb-[14px]' : 'hover:bg-[#FFF5EC] rounded-full w-[fit-content] cursor-pointer flex justify-center items-center p-3 lg:mb-[14px]'}>
                                         {
                                             tabValue === 'tab1' ? <div className='w-[25px] h-[25px]'><Image src={valueFocus} height={100} width={100}></Image></div> : <div className='w-[25px] h-[25px]'><Image src={value} height={100} width={100}></Image></div>
@@ -65,14 +65,14 @@ export default function HeroSection() {
                         
                                 </div>
                             </div>
-                            <div className='min-w-[25%] flex justify-center items-center'>
+                            <div className='min-w-[22.5%] flex justify-center items-center'>
                                 <div onClick={() => handleTabValue('tab2')} className={tabValue === 'tab2' ? 'bg-[#FFF5EC] transition ease-linear duration-1000 rounded-full w-[fit-content] cursor-pointer flex justify-center items-center p-3 lg:mb-[14px]' : 'hover:bg-[#FFF5EC] rounded-full w-[fit-content] cursor-pointer flex justify-center items-center p-3 lg:mb-[14px]'}>
                                     {
                                         tabValue === 'tab2' ? <div className='w-[25px] h-[25px]'><Image src={lockFocus} height={100} width={100}></Image></div> : <div className='w-[25px] h-[25px]'><Image src={lock} height={100} width={100}></Image></div>
                                     }
                                 </div>
                             </div>
-                            <div className='min-w-[25%] flex justify-center items-center'>
+                            <div className='min-w-[22.5%] flex justify-center items-center'>
                                 <div onClick={() => handleTabValue('tab3')} className={tabValue === 'tab3' ? 'bg-[#FFF5EC] transition ease-linear duration-1000 rounded-full w-[fit-content] cursor-pointer flex justify-center items-center p-3 lg:mb-[14px]' : 'hover:bg-[#FFF5EC] rounded-full w-[fit-content] cursor-pointer flex justify-center items-center p-3 lg:mb-[14px]'}>
                                     {
                                         tabValue === 'tab3' ? <div className='w-[25px] h-[25px]'><Image src={timeFocus} height={100} width={100}></Image></div> : <div className='w-[25px] h-[25px]'><Image src={time} height={100} width={100}></Image></div>
@@ -80,14 +80,14 @@ export default function HeroSection() {
                                     
                                 </div>
                             </div>
-                            <div className='min-w-[25%] flex justify-center items-center'>
+                            <div className='min-w-[22.5%] flex justify-center items-center'>
                                 <div onClick={() => handleTabValue('tab4')} className={tabValue === 'tab4' ? 'bg-[#FFF5EC] transition ease-linear duration-1000 rounded-full w-[fit-content] cursor-pointer flex justify-center items-center p-3 lg:mb-[14px]' : 'hover:bg-[#FFF5EC] rounded-full w-[fit-content] cursor-pointer flex justify-center items-center p-3 lg:mb-[14px]'}>
                                     {
                                         tabValue === 'tab4' ? <div className='w-[25px] h-[25px]'><Image src={protectionFocus} height={100} width={100}></Image></div> : <div className='w-[25px] h-[25px]'><Image src={protection} height={100} width={100}></Image></div>
                                     }
                                 </div>
                             </div>
-                            <div className='min-w-[25%] flex justify-center items-center'>
+                            <div className='min-w-[22.5%] flex justify-center items-center'>
                                 <div onClick={() => handleTabValue('tab5')} className={tabValue === 'tab5' ? 'bg-[#FFF5EC] transition ease-linear duration-1000 rounded-full w-[fit-content] cursor-pointer flex justify-center items-center p-3 lg:mb-[14px]' : 'hover:bg-[#FFF5EC] rounded-full w-[fit-content] cursor-pointer flex justify-center items-center p-3 lg:mb-[14px]'}>
                                     {
                                         tabValue === 'tab5' ? <div className='w-[25px] h-[25px]'><Image src={plugFocus} height={100} width={100}></Image></div> : <div className='w-[25px] h-[25px]'><Image src={plug} height={100} width={100}></Image></div>
@@ -95,14 +95,14 @@ export default function HeroSection() {
                                     
                                 </div>
                             </div>
-                            <div className='min-w-[25%] flex justify-center items-center'>
+                            <div className='min-w-[22.5%] flex justify-center items-center'>
                                 <div onClick={() => handleTabValue('tab6')} className={tabValue === 'tab6' ? 'bg-[#FFF5EC] transition ease-linear duration-1000 rounded-full w-[fit-content] cursor-pointer flex justify-center items-center p-3 lg:mb-[14px]' : 'hover:bg-[#FFF5EC] rounded-full w-[fit-content] cursor-pointer flex justify-center items-center p-3 lg:mb-[14px]'}>
                                     {
                                         tabValue === 'tab6' ? <div className='w-[25px] h-[25px]'><Image src={browserFocus} height={100} width={100}></Image></div> : <div className='w-[25px] h-[25px]'><Image src={browser} height={100} width={100}></Image></div>
                                     }
                                 </div>
                             </div>
-                            <div className='min-w-[25%] flex justify-center items-center'>
+                            <div className='min-w-[22.5%] flex justify-center items-center'>
                                 <div onClick={() => handleTabValue('tab7')} className={tabValue === 'tab7' ? 'bg-[#FFF5EC] transition ease-linear duration-1000 rounded-full w-[fit-content] cursor-pointer flex justify-center items-center p-3 lg:mb-[14px]' : 'hover:bg-[#FFF5EC] rounded-full w-[fit-content] cursor-pointer flex justify-center items-center p-3 lg:mb-[14px]'}>
                                     {
                                         tabValue === 'tab7' ? <div className='w-[25px] h-[25px]'><Image src={dollarFocus} height={100} width={100}></Image></div> : <div className='w-[25px] h-[25px]'><Image src={dollar} height={100} width={100}></Image></div>
@@ -110,7 +110,7 @@ export default function HeroSection() {
                                     
                                 </div>
                             </div>
-                            <div className='min-w-[25%] flex justify-center items-center'>
+                            <div className='min-w-[22.5%] flex justify-center items-center'>
                                 <div onClick={() => handleTabValue('tab8')} className={tabValue === 'tab8' ? 'bg-[#FFF5EC] transition ease-linear duration-1000 rounded-full w-[fit-content] cursor-pointer flex justify-center items-center p-3' : 'hover:bg-[#FFF5EC] rounded-full w-[fit-content] cursor-pointer flex justify-center items-center p-3'}>
                                     {
                                         tabValue === 'tab8' ? <div className='w-[25px] h-[25px]'><Image src={globeFocus} height={100} width={100}></Image></div> : <div className='w-[25px] h-[25px]'><Image src={globe} height={100} width={100}></Image></div>

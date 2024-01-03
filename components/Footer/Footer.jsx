@@ -26,7 +26,7 @@ export default function Footer() {
               </div>
             </div>
     
-            <div className="grid grid-cols-2 lg:grid-cols-3 lg:w-[50%] lg:justify-items-end gap-10 text-white text-sm">
+            <div className="grid grid-cols-2 lg:pt-[0px] pt-[50px] lg:grid-cols-3 lg:w-[50%] lg:justify-items-end gap-10 text-white text-sm">
               <div className="flex flex-col gap-4">
                 <h1 className=" text-[#FF7A00] text-[24px] font-semibold">About</h1>
                 <Link href="https://remotual.com/about" target="_blank"><p className="cursor-pointer">About Us</p> </Link>
